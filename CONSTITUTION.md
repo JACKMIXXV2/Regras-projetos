@@ -6,7 +6,7 @@
 
 Ele não é um projeto de produto, não é um índice de projetos e não depende de uma lista de nomes para ter validade.
 
-Todos os projetos atuais e futuros são tratados como cidadãos desta governança.
+Todos os projetos atuais e futuros são cidadãos desta governança.
 
 ## Artigo 2 — Universalidade
 
@@ -16,9 +16,9 @@ Se um repositório, laboratório, mod, app, ferramenta, experimento ou workspace
 
 Nenhuma atualização desta Constituição deve exigir adicionar cada projeto individualmente a uma tabela central.
 
-## Artigo 3 — Hierarquia e regras locais
+## Artigo 3 — Lei-base e regras locais
 
-A lei universal é a base padrão de todos os projetos, mas **regras locais são esperadas e necessárias** quando um projeto possui necessidades próprias.
+A lei universal é a base padrão, mas regras locais são parte normal e necessária da arquitetura.
 
 Hierarquia operacional normal:
 
@@ -31,19 +31,11 @@ Hierarquia operacional normal:
 6. frontend/spinner
 ```
 
-Uma regra local pode especializar a aplicação da lei para aquele projeto.
-
-Exemplo:
-
-```text
-Lei universal: confirme branch e HEAD antes de escrever.
-Regra local: neste projeto, recuperação acontece na branch lab.
-Resultado: use lab e confirme HEAD antes de escrever.
-```
+Regras locais podem especializar a aplicação da lei para a realidade técnica de cada projeto.
 
 ## Artigo 4 — Exceções locais autorizadas pelo usuário
 
-Uma regra local **pode contrariar ou substituir uma regra universal** quando o usuário autorizar explicitamente essa exceção para aquele projeto, contexto ou operação.
+Uma regra local pode contrariar ou substituir uma regra universal quando o usuário autorizar explicitamente essa exceção para aquele projeto, contexto ou operação.
 
 Uma exceção autorizada:
 
@@ -82,15 +74,15 @@ A Constituição não deve duplicar estado efêmero desses projetos.
 
 ## Artigo 6 — Cidadania de projeto
 
-Um projeto é considerado governado assim que for tratado como projeto do usuário.
+Um projeto é governado assim que for tratado como projeto do usuário.
 
-Para facilitar retomadas por agentes, recomenda-se que o repositório do projeto contenha um pequeno arquivo de ponte, por exemplo `PROJECT_GOVERNANCE.md`, apontando para:
+Para facilitar retomadas, recomenda-se que o repositório possua um arquivo de ponte, como `PROJECT_GOVERNANCE.md`, apontando para:
 
 ```text
 https://github.com/JACKMIXXV2/Regras-projetos
 ```
 
-A ausência temporária desse arquivo não revoga a lei. Ele é um mecanismo de descoberta, não a fonte da autoridade.
+A ausência temporária desse arquivo não revoga a lei.
 
 ## Artigo 7 — Projetos futuros
 
@@ -98,36 +90,49 @@ Ao criar um projeto novo:
 
 1. aplicar esta Constituição desde o início;
 2. manter regras locais para necessidades específicas;
-3. registrar localmente exceções autorizadas pelo usuário;
-4. não copiar regras universais desnecessariamente;
-5. criar um ponto de entrada local claro para estado e continuidade;
-6. persistir progresso real no próprio repositório;
-7. adicionar referência para `Regras-projetos` quando houver repositório GitHub.
+3. registrar localmente exceções autorizadas;
+4. criar um ponto de entrada claro para estado e continuidade;
+5. persistir progresso real no próprio repositório;
+6. adicionar referência para `Regras-projetos` quando houver repositório GitHub.
 
 O projeto não precisa ser cadastrado neste repositório central.
 
-## Artigo 8 — Projetos legados e portabilidade
+## Artigo 8 — Adaptação e convergência
 
-Projetos criados antes desta Constituição não devem ser reestruturados cegamente nem tratados como incorretos por utilizarem sistemas antigos de regras, handoff, continuidade, branches ou checkpoints.
+Projetos ativos que já possuem sistemas próprios de regras, handoffs, checkpoints, branches, workflows ou continuidade devem se adaptar à governança universal por convergência, conforme `ADAPTATION_PROTOCOL.md`.
 
-Sua adoção deve obedecer `ADOPTION_PROTOCOL.md`.
+Nenhum projeto recebe prioridade apenas por ser mais novo ou estar há mais tempo em atividade.
 
-Princípios obrigatórios da portabilidade:
+A adaptação deve combinar:
 
-- preservar continuidade e estado já validado;
-- preservar regras locais úteis;
-- classificar conflitos em vez de apagá-los;
-- registrar exceções autorizadas;
-- adaptar a organização sem reiniciar o projeto;
-- permitir migração incremental sem congelar trabalho técnico produtivo.
+- princípios universais;
+- boas práticas locais já comprovadas;
+- sistemas de continuidade existentes;
+- necessidades técnicas específicas;
+- exceções autorizadas;
+- práticas locais que possam melhorar a governança de todos.
 
-A nova governança deve envolver o projeto existente, não destruir sua história para fingir que ele nasceu hoje.
+O objetivo não é substituir cegamente um sistema pelo outro. É produzir um mix coerente e melhor do que cada lado isolado.
 
-## Artigo 9 — Semântica universal de ataque
+Projetos também podem ensinar a Constituição: uma prática local geral e comprovadamente útil pode ser promovida a regra universal com autorização do usuário.
 
-A palavra `ataca`, quando usada para autorizar trabalho em um projeto, possui a semântica definida em `GLOBAL_RULES.md`.
+## Artigo 9 — Palavras-chave operacionais
 
-Nenhum projeto precisa redefinir esse comportamento. Pode acrescentar gates, critérios técnicos e exceções locais autorizadas.
+As palavras-chave universais são definidas em `KEYWORDS.md`.
+
+Duas possuem significado obrigatório em todos os projetos:
+
+```text
+ataca = ataque contínuo para avançar materialmente no alvo atual
+
+tudo = ataque contínuo + cobertura absoluta de todo o escopo aplicável
+
+ataca tudo = ataque contínuo e exaustivo do escopo atual
+```
+
+`tudo` também funciona como quantificador literal: não significa “principais partes”, “o importante” ou “amostra representativa”.
+
+Projetos podem criar aliases e palavras-chave adicionais localmente.
 
 ## Artigo 10 — Continuidade
 
@@ -143,9 +148,9 @@ Quando algo não está provado, deve permanecer explicitamente não provado.
 
 ## Artigo 12 — Completude
 
-Pedidos de completude literal obedecem `GLOBAL_RULES.md` em todos os projetos, salvo exceção específica de escopo autorizada pelo usuário.
+Pedidos de completude literal obedecem `GLOBAL_RULES.md` e `KEYWORDS.md` em todos os projetos, salvo redução explícita de escopo autorizada pelo usuário.
 
-Nenhum agente pode redefinir sozinho `completo` como `principais arquivos`, `amostra representativa` ou equivalente.
+Nenhum agente pode redefinir sozinho `tudo`, `completo`, `1:1`, `full`, `total` ou equivalente como “principais arquivos”, “amostra representativa” ou subset conveniente.
 
 ## Artigo 13 — GitHub
 
@@ -168,16 +173,22 @@ Nenhum agente deve remover deliberadamente funcionalidade válida, evidência, f
 
 Mudanças que removem comportamento validado exigem motivo técnico real, rastreabilidade e, quando forem incompatíveis com o objetivo estabelecido, autorização do usuário.
 
-## Artigo 16 — Emendas
+## Artigo 16 — Evolução da lei
 
-Uma regra entra neste repositório somente quando for realmente universal ou estrutural.
+Uma regra entra neste repositório quando for realmente universal ou estrutural.
 
 Se uma regra só faz sentido para um projeto, ela pertence ao repositório desse projeto.
 
-Emendas devem evitar nomes, versões, porcentagens ou detalhes temporários de cidadãos específicos, salvo exemplos claramente não normativos.
+Uma boa prática pode nascer localmente, ser classificada como `UNIVERSAL_CANDIDATE` em `ADAPTATION_PROTOCOL.md` e depois ser promovida para a governança universal com autorização do usuário.
+
+Assim, a lei não é isolada dos projetos: ela evolui a partir da experiência acumulada deles.
 
 ## Artigo 17 — Princípio final
 
-A lei conhece o comportamento-base que os projetos devem seguir.
+A lei define a base comum.
 
-Ela não precisa conhecer cada projeto pelo nome, nem impedir que cada cidadão tenha suas próprias leis locais e exceções autorizadas.
+Os projetos definem suas especializações.
+
+A adaptação faz os dois lados convergirem.
+
+A lei melhora os projetos e os projetos melhoram a lei.
