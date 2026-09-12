@@ -11,22 +11,25 @@ Não existe lista fechada de projetos. Um projeto novo não precisa ser cadastra
 - Antes de agir, ler HEAD, estado atual, último checkpoint, evidências e filas existentes quando aplicável.
 - Histórico de conversa é contexto auxiliar, não autoridade superior ao estado persistido.
 
-## 2. `ataca` = autorização contínua
+## 2. Palavras-chave operacionais
+
+As palavras-chave universais são definidas em `KEYWORDS.md`.
+
+Regras mínimas obrigatórias:
+
+```text
+ataca = ataque contínuo no alvo atual
+
+tudo = ataque contínuo + escopo absoluto dentro do alvo atual
+
+ataca tudo = ataque contínuo e exaustivo do escopo atual
+```
 
 Quando o usuário disser `ataca`, interpretar como autorização para uma passagem longa, autônoma, profunda e produtiva no estágio/alvo atual.
 
-O ataque continua através de:
+Quando o usuário disser `tudo` operacionalmente, interpretar também como comando de ataque, mas exigindo cobertura integral de tudo que pertence ao escopo aplicável.
 
-- subtarefas dependentes;
-- correções e retestes;
-- commits intermediários;
-- builds e CI;
-- hipóteses falsificadas;
-- rotas que retornam `+0`;
-- checkpoints;
-- pivôs para outras rotas úteis.
-
-Não transformar `ataca` em uma tentativa curta seguida de pedido de novo `continua`.
+Não transformar nenhum dos dois em tentativa curta seguida de pedido de novo `continua`.
 
 ### Condições válidas de parada
 
@@ -62,6 +65,8 @@ Enquanto existir outra rota produtiva e permitida, continuar.
 
 `all`, `everything`, `tudo`, `completo`, `full`, `total`, `1:1`, `inteiro`, `absoluto`, `entire workspace`, `entire project` e equivalentes significam o conjunto integral solicitado.
 
+`tudo` possui regra adicional: além de ser quantificador absoluto, também funciona como comando de ataque contínuo conforme `KEYWORDS.md`.
+
 Para declarar `COMPLETE`:
 
 - inventariar o conjunto de origem;
@@ -70,7 +75,9 @@ Para declarar `COMPLETE`:
 - validar contagens, caminhos e hashes quando aplicável;
 - listar exceções explicitamente.
 
-Se um único item requerido não puder ser transferido ou verificado, declarar `INCOMPLETE` e dizer o que falta.
+Se um único item requerido não puder ser transferido, analisado ou verificado, declarar `INCOMPLETE` e dizer o que falta.
+
+Nunca reduzir silenciosamente `tudo` para “o importante”, “os principais”, “uma amostra” ou “o que deu tempo”.
 
 ## 6. Baseline é patrimônio
 
@@ -154,7 +161,8 @@ Elas podem definir, entre outras coisas:
 - formato de release;
 - contratos técnicos;
 - regras de segurança específicas;
-- convenções próprias de continuidade.
+- convenções próprias de continuidade;
+- palavras-chave e aliases adicionais.
 
 Por padrão, regras locais especializam a lei universal sem contradizê-la.
 
@@ -268,16 +276,25 @@ Salvo critério local mais específico ou exceção autorizada, `DONE`, `FEITO`,
 
 `código escrito`, `arquivo criado`, `commit feito` ou `build iniciada` não significam automaticamente `DONE` quando ainda falta validação exigida pelo próprio trabalho.
 
-## 21. Portabilidade para a nova governança
+## 21. Adaptação por convergência
 
-Projetos anteriores a `Regras-projetos` obedecem ao protocolo de adoção definido em `ADOPTION_PROTOCOL.md`.
+Projetos ativos que já possuem sistemas próprios se adaptam à governança universal conforme `ADAPTATION_PROTOCOL.md`.
 
-A migração deve ser incremental e preservadora:
+A adaptação não usa idade como critério de supremacia:
 
-- não reiniciar projetos legados;
-- não apagar sistemas antigos úteis apenas por serem antigos;
-- classificar regras antigas como universais, especializações locais, exceções autorizadas ou conflitos ainda não revisados;
-- criar pontes de compatibilidade quando agentes ou scripts antigos dependem da organização anterior;
-- continuar trabalho técnico produtivo enquanto a reorganização puder ocorrer em paralelo.
+- o sistema novo não vence só por ser novo;
+- o sistema existente não vence só por estar há mais tempo em uso.
 
-Portabilidade significa integrar a nova lei à história existente, não fingir que a história começou depois da Constituição.
+O objetivo é combinar o melhor de ambos.
+
+Durante a adaptação:
+
+- incorporar princípios universais aplicáveis;
+- preservar especializações locais úteis;
+- reconciliar duplicações e conflitos;
+- registrar exceções autorizadas;
+- manter continuidade e estado válidos;
+- identificar práticas locais que possam virar `UNIVERSAL_CANDIDATE`;
+- melhorar a lei universal quando a experiência dos projetos revelar uma prática melhor e o usuário autorizar sua promoção.
+
+Adaptação significa convergência real, não substituição cega em nenhuma direção.
