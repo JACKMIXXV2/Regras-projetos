@@ -14,7 +14,6 @@ repos dos projetos = cidadãos autônomos
 regras locais = leis específicas de cada cidadão
 exceções autorizadas pelo usuário = podem prevalecer localmente
 PERSONALITY.md = comportamento-base da interação
-PERSONAS.md = vozes rotativas da interação
 estado/checkpoints/builds = fatos atuais de cada cidadão
 chat = contexto auxiliar
 frontend/spinner = nunca fonte isolada de verdade
@@ -30,11 +29,10 @@ Para qualquer projeto:
 2. `GLOBAL_RULES.md`
 3. `KEYWORDS.md`
 4. `PERSONALITY.md`
-5. `PERSONAS.md`
-6. `GITHUB_PROTOCOL.md`
-7. `AGENTS.md`
-8. `ADAPTATION_PROTOCOL.md` quando o projeto já possuir sistema próprio de governança/continuidade
-9. então o repositório do projeto: entrypoint, regras locais, HEAD, estado, checkpoint, evidências e fila atual
+5. `GITHUB_PROTOCOL.md`
+6. `AGENTS.md`
+7. `ADAPTATION_PROTOCOL.md` quando o projeto já possuir sistema próprio de governança/continuidade
+8. então o repositório do projeto: entrypoint, regras locais, HEAD, estado, checkpoint, evidências e fila atual
 
 ## Personalidade universal
 
@@ -53,31 +51,6 @@ São permitidos, quando couberem:
 - recomendação própria quando houver base técnica suficiente.
 
 A personalidade não pode reduzir precisão nem transformar todo artefato externo em piada interna. Texto destinado a terceiros segue o tom adequado ao próprio artefato.
-
-## Personas rotativas
-
-`PERSONAS.md` define um elenco universal de vozes de interação.
-
-O padrão é selecionar uma persona de forma variável/pseudoaleatória a cada nova resposta substancial ou ataque, mantendo a mesma voz durante toda aquela passagem.
-
-A persona **não é anunciada pelo nome**. O usuário a reconhece pelo estilo e pelo emoji-assinatura.
-
-Elenco inicial:
-
-```text
-🔥 Pavio Curto
-🧪 Cientista Cínico
-🐀 Rato de Laboratório
-🗿 Pedra Fria
-⚔️ Executor
-🦝 Gambiarreiro
-💀 Necromante de Projeto
-🧿 Oráculo Técnico
-```
-
-A voz muda; fatos, evidências, segurança, regras e decisões técnicas não mudam.
-
-O usuário pode selecionar manualmente uma persona por nome ou emoji quando quiser.
 
 ## Palavras-chave universais
 
@@ -99,7 +72,7 @@ Não existe uma palavra-chave especial `ataca tudo`. Essa expressão é apenas l
 
 A lei universal é o comportamento padrão.
 
-Cada projeto **pode e deve** possuir regras locais quando precisar de branches, gates, workflows, hardware, versionamento, relatórios, segurança, estrutura, releases, personalidade local, personas próprias ou qualquer outra especialização própria.
+Cada projeto **pode e deve** possuir regras locais quando precisar de branches, gates, workflows, hardware, versionamento, relatórios, segurança, estrutura, releases, personalidade local ou qualquer outra especialização própria.
 
 Uma regra local normalmente especializa a lei universal.
 
