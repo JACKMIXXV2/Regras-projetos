@@ -1,79 +1,89 @@
-# Regras dos Projetos — fonte central de governança
+# Regras-projetos — Lei Universal dos Projetos
 
-Este repositório é o **manual canônico de comportamento, continuidade, ataque e persistência** dos projetos ativos de Jack/Midrato.
+Este repositório é a **fonte canônica de governança** para todos os projetos atuais e futuros de Jack/Midrato.
 
-Ele existe para que um novo chat/agente possa receber este link, ler as regras e continuar o projeto correto **sem reiniciar do zero, sem depender da memória de uma conversa antiga e sem transformar cada subetapa em um novo pedido de autorização**.
+Ele não pertence a Mid Pogo, Humo Negro, Walten, WinterWonder nem a qualquer projeto específico. Esses projetos são apenas cidadãos desta lei. Projetos que ainda nem existem também passam a obedecê-la quando forem criados.
 
-## Projetos cobertos
+A finalidade é simples: qualquer chat, agente, Codex ou ferramenta que entre em um projeto deve saber **como continuar, atacar, validar, persistir e reportar trabalho** sem inventar um método diferente a cada conversa.
 
-| Projeto | Repositório de trabalho | Perfil de regras |
-|---|---|---|
-| Mid Pogo | `JACKMIXXV2/mid-pogo` | `projects/MID_POGO.md` |
-| Humo Negro / Radio Rebelión VoiceLab | `JACKMIXXV2/radio-rebelion` | `projects/HUMO_NEGRO.md` |
-| Walten Mod Loader / Recovery Lab | `JACKMIXXV2/walten-mod-loader` | `projects/WALTEN_MOD_LOADER.md` |
-| WinterWonder | `JACKMIXXV2/WinterWonder` | `projects/WINTERWONDER.md` |
-
-## Leitura obrigatória em uma nova conversa
-
-1. `AGENTS.md`
-2. `GLOBAL_RULES.md`
-3. `GITHUB_PROTOCOL.md`
-4. o arquivo do projeto em `projects/`
-5. os entrypoints atuais apontados pelo próprio repositório do projeto
-6. HEAD/estado/checkpoint/evidências atuais do projeto
-
-**Não substitua essa ordem por histórico de chat.** O chat ajuda a interpretar; o GitHub persistido decide o estado real.
-
-## Separação importante: regras x estado
-
-Este repositório centraliza **regras estáveis e a ordem de retomada**.
-
-O estado volátil de cada projeto — versão atual, porcentagem, estágio, fila, checkpoint, build, commit, gate e próximo alvo — continua pertencendo ao repositório do próprio projeto. Não congele aqui uma porcentagem como se ela fosse eterna.
-
-Hierarquia geral:
+## Princípio central
 
 ```text
-regras de segurança/plataforma aplicáveis
-> Regras-projetos/AGENTS.md + GLOBAL_RULES.md
-> perfil central do projeto
-> HEAD + arquivos canônicos atuais do repositório do projeto
-> checkpoints/evidências/provenance
-> histórico de conversa
-> spinner/estado visual do frontend
+Regras-projetos = lei universal
+repos dos projetos = cidadãos
+regras locais = regulamentos permitidos
+estado/checkpoints/builds = fatos atuais de cada cidadão
+chat = contexto auxiliar
+frontend/spinner = nunca fonte de verdade
 ```
 
-Se o perfil central e o estado atual do projeto divergirem em uma informação **volátil**, vale o estado atual do projeto. Se divergirem em uma **regra/invariante**, não faça alteração silenciosa: preserve a regra mais restritiva e registre a inconsistência.
+Não existe lista fechada de projetos cobertos.
 
-## Palavra-chave `ataca`
+Se um projeto pertence ao conjunto de projetos do usuário, esta governança se aplica por padrão, mesmo que o nome do projeto nunca tenha aparecido neste repositório.
 
-Em todos os projetos cobertos, salvo regra específica mais restritiva, `ataca` significa:
+## Leitura obrigatória
 
-> executar uma passagem longa, autônoma, profunda e produtiva no estágio/alvo atual, continuando por subtarefas, correções, testes, commits e pivôs úteis sem exigir novo `continua` a cada microetapa.
+Para qualquer projeto, atual ou futuro:
 
-As condições de parada e o protocolo completo estão em `GLOBAL_RULES.md`.
+1. `CONSTITUTION.md`
+2. `GLOBAL_RULES.md`
+3. `GITHUB_PROTOCOL.md`
+4. `AGENTS.md`
+5. então o repositório do projeto: entrypoint, regras locais, HEAD, estado, checkpoint, evidências e fila atual
 
-## GitHub é persistência, não decoração
+O repositório do projeto pode definir detalhes próprios, como branches, gates, barras, versão, build, hardware-alvo, arquivos de boot ou ordem técnica. Ele **não pode contradizer a lei universal**.
 
-Mudança material que só existe no chat ou em workspace efêmero **não está concluída**. Ataques relevantes devem persistir código, documentação, evidência ou checkpoint no repositório oficial correspondente quando houver mudança real.
+## Hierarquia de autoridade operacional
 
-O protocolo de leitura, escrita, commits, CI, bugs, conflitos e artefatos está em `GITHUB_PROTOCOL.md`.
+```text
+1. Regras universais deste repositório
+2. Regras locais compatíveis do projeto
+3. HEAD + estado/checkpoint/evidências persistidas do projeto
+4. resultados de CI/build/runtime
+5. histórico de conversa
+6. estado visual do frontend/spinner
+```
 
-## Regra de completude
+Quando houver conflito real entre uma regra local e a lei universal, a lei universal vence. Quando não houver conflito, a regra local especializa a lei para aquele projeto.
 
-Palavras como `tudo`, `completo`, `1:1`, `inteiro`, `absoluto`, `full`, `total` e equivalentes são literais. Uma seleção dos “arquivos importantes” não é o todo. Se faltar algo do escopo solicitado, o resultado é `INCOMPLETE` e deve dizer exatamente o que falta.
+Informações voláteis como versão, porcentagem, estágio, fila, commit, build, próximo alvo e gate permanecem no próprio projeto. Este repositório não deve virar um mural de números velhos.
+
+## `ataca`
+
+Em qualquer projeto governado por esta lei, `ataca` significa uma passagem **longa, autônoma, profunda e produtiva** no alvo atual.
+
+Não significa fazer uma tentativa curta e pedir outro `continua`.
+
+O ataque atravessa subtarefas, correções, testes, commits, builds, checkpoints e pivôs úteis enquanto houver trabalho executável e permitido. As condições formais de parada estão em `GLOBAL_RULES.md`.
+
+## GitHub é persistência
+
+Mudança material que existe apenas no chat ou em workspace efêmero não está concluída.
+
+O protocolo universal de leitura, escrita, SHA, branch, commit, CI, conflito, bug, artefato, migração e recuperação está em `GITHUB_PROTOCOL.md`.
+
+## Completude
+
+Palavras como `tudo`, `completo`, `1:1`, `inteiro`, `absoluto`, `full`, `total` e equivalentes são literais. Se faltar qualquer parte do escopo pedido, o resultado é `INCOMPLETE` e deve dizer exatamente o que falta.
 
 ## Eficiência de ferramentas
 
-Para tarefas de GitHub, prefira o conector GitHub, scripts do próprio repositório e ferramentas diretas. **Não consuma Work/Codex apenas para fazer operações que o fluxo direto já resolve.** Use ambientes mais pesados somente quando forem realmente necessários ou explicitamente pedidos.
+Use a ferramenta mais direta capaz de executar o trabalho. Para GitHub, prefira o conector GitHub e scripts do próprio projeto. Não consuma Work/Codex só para operações simples que já podem ser feitas diretamente.
 
-## Manutenção deste repositório
+## Projetos futuros
 
-Quando uma regra estável de projeto mudar:
+Um projeto novo não precisa ser adicionado a uma lista neste repositório para ser governado.
 
-1. atualize primeiro a fonte canônica do projeto, quando aplicável;
-2. atualize o perfil correspondente aqui;
-3. não copie estado efêmero desnecessário;
-4. mantenha links/ordem de boot válidos;
-5. registre a mudança em commit claro.
+Ele deve apenas:
 
-Objetivo final: **um link para colocar qualquer chat nos trilhos antes que ele invente seu próprio folclore operacional.**
+1. reconhecer `Regras-projetos` como lei superior de governança;
+2. manter suas regras locais apenas para especializações necessárias;
+3. persistir estado real no próprio repositório;
+4. nunca copiar para cá estado efêmero que envelhece a cada versão;
+5. seguir o contrato universal de adoção definido em `CONSTITUTION.md`.
+
+## Emenda da lei
+
+Mudanças nesta governança devem ser universais por natureza. Uma necessidade exclusiva de um único projeto normalmente pertence ao repositório daquele projeto, não aqui.
+
+Este repositório deve permanecer pequeno, estável, genérico e reutilizável. A lei não precisa saber o nome de cada cidadão para continuar sendo lei.
