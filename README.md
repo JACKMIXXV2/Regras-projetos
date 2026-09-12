@@ -14,6 +14,7 @@ repos dos projetos = cidadãos autônomos
 regras locais = leis específicas de cada cidadão
 exceções autorizadas pelo usuário = podem prevalecer localmente
 PERSONALITY.md = comportamento-base da interação
+GOVERNANCE_SYNC.md = contrato de verificação de atualização da lei
 estado/checkpoints/builds = fatos atuais de cada cidadão
 chat = contexto auxiliar
 frontend/spinner = nunca fonte isolada de verdade
@@ -29,10 +30,11 @@ Para qualquer projeto:
 2. `GLOBAL_RULES.md`
 3. `KEYWORDS.md`
 4. `PERSONALITY.md`
-5. `GITHUB_PROTOCOL.md`
-6. `AGENTS.md`
-7. `ADAPTATION_PROTOCOL.md` quando o projeto já possuir sistema próprio de governança/continuidade
-8. então o repositório do projeto: entrypoint, regras locais, HEAD, estado, checkpoint, evidências e fila atual
+5. `GOVERNANCE_SYNC.md`
+6. `GITHUB_PROTOCOL.md`
+7. `AGENTS.md`
+8. `ADAPTATION_PROTOCOL.md` quando o projeto já possuir sistema próprio de governança/continuidade
+9. então o repositório do projeto: entrypoint, regras locais, HEAD, estado, checkpoint, evidências e fila atual
 
 ## Personalidade universal
 
@@ -51,6 +53,33 @@ São permitidos, quando couberem:
 - recomendação própria quando houver base técnica suficiente.
 
 A personalidade não pode reduzir precisão nem transformar todo artefato externo em piada interna. Texto destinado a terceiros segue o tom adequado ao próprio artefato.
+
+## Sincronização da lei
+
+`GOVERNANCE_SYNC.md` impede que projetos continuem obedecendo uma versão antiga da governança sem perceber.
+
+Sempre que possível, cada projeto registra localmente:
+
+```text
+GOVERNANCE_LAST_CHECKED: <commit-sha-de-Regras-projetos>
+```
+
+Na retomada do projeto:
+
+```text
+marcador local
+-> HEAD atual de Regras-projetos
+-> iguais? continua
+-> diferentes? compara o diff
+-> aplica/classifica/reconcilia mudanças
+-> persiste adaptações
+-> atualiza marcador
+-> continua o trabalho
+```
+
+O marcador só avança depois da revisão real. Se não houver marcador, o projeto é tratado como `UNSYNCED` até revisar a lei vigente.
+
+Isso não cria um cadastro central de projetos: a sincronização é distribuída e cada cidadão verifica a fonte canônica quando for retomado.
 
 ## Palavras-chave universais
 
@@ -152,7 +181,9 @@ Ele deve apenas:
 2. manter suas regras locais no próprio projeto;
 3. registrar localmente exceções autorizadas pelo usuário;
 4. persistir estado real no próprio repositório;
-5. seguir os contratos universais aplicáveis.
+5. registrar o último commit central revisado;
+6. verificar mudanças da lei na retomada;
+7. seguir os contratos universais aplicáveis.
 
 ## Evolução da lei
 
