@@ -2,7 +2,7 @@
 
 Este arquivo é a porta de entrada operacional para qualquer chat, agente, Codex ou ferramenta que trabalhe em qualquer projeto governado por `Regras-projetos`.
 
-Não existe perfil central por projeto. A lei é universal; o estado e as especializações pertencem ao próprio repositório do projeto.
+Não existe perfil central por projeto. A lei é universal; o estado, as especializações e as exceções autorizadas pertencem ao próprio repositório do projeto.
 
 ## Antes de agir
 
@@ -12,14 +12,15 @@ Leia, nesta ordem:
 2. `GLOBAL_RULES.md`
 3. `GITHUB_PROTOCOL.md`
 4. identifique o repositório real do projeto
-5. leia os arquivos locais de bootstrap/regras/estado existentes nesse projeto
+5. leia os arquivos locais de bootstrap, regras e estado existentes nesse projeto
 6. confirme HEAD, branch, checkpoint, evidências, filas e builds atuais quando aplicável
+7. se o projeto for anterior a esta governança ou usar organização legada, aplique `ADOPTION_PROTOCOL.md`
 
 Não peça ao usuário para reexplicar informação que já está persistida e acessível.
 
 ## Relação entre lei universal e regras locais
 
-Regras locais podem especializar detalhes como:
+Regras locais são parte normal da arquitetura e podem definir:
 
 - branches;
 - versionamento;
@@ -29,11 +30,20 @@ Regras locais podem especializar detalhes como:
 - workflows;
 - testes;
 - gates;
-- estrutura interna.
+- estrutura interna;
+- políticas específicas do projeto.
 
-Elas não podem cancelar princípios universais deste repositório.
+Por padrão, elas especializam a lei universal.
 
-Quando houver conflito verdadeiro, a lei universal prevalece. Quando houver apenas especialização, as duas valem simultaneamente.
+Uma regra local também pode contrariar uma regra universal quando houver **autorização explícita do usuário** para essa exceção. Exceção persistente deve ser registrada no próprio projeto e vale somente no escopo autorizado.
+
+Nunca invente uma exceção local nem suponha que a exceção de um projeto vale para outro.
+
+## Instrução mais recente
+
+Quando o usuário corrigir ou substituir uma instrução anterior sobre o mesmo assunto, siga a instrução mais recente a partir daquele ponto.
+
+Preserve evidências, histórico, commits e artefatos anteriores; mude a direção operacional, não os fatos já ocorridos.
 
 ## Fonte de verdade
 
@@ -64,6 +74,12 @@ Uma rota falhar não encerra o ataque inteiro.
 
 Não deixe uma única etapa opaca consumir indefinidamente a passagem sem checkpoint ou evidência. Após tentativas realmente equivalentes e cegas sem avanço, marque a rota como `STALLED`, preserve o diagnóstico e pivote.
 
+## Checkpoint preventivo
+
+Não espere o fim de uma passagem longa para proteger trabalho material.
+
+Crie checkpoint ou commit seguro depois de avanço significativo e antes de operações arriscadas quando isso reduzir risco de perda. O checkpoint protege continuidade e **não encerra o ataque**.
+
 ## Persistência obrigatória
 
 Mudança material não termina no chat.
@@ -90,17 +106,45 @@ Não invente artefato, valor, identidade, hash, build, resultado, porcentagem ou
 
 Evidência nova pode inclusive reduzir uma pontuação antiga se mostrar que ela estava superestimada.
 
-## Preservação de baseline
+## Preservação e não sabotagem
 
 Comportamento previamente validado é baseline.
 
-Não remover, reescrever, degradar ou “corrigir” silenciosamente baseline funcional só porque uma implementação diferente parece mais elegante. Mudança incompatível exige motivo, evidência e registro.
+Não remover, reescrever, degradar ou “corrigir” silenciosamente baseline funcional só porque outra implementação parece mais conveniente.
+
+Também não remover evidência, ferramenta, checkpoint, compatibilidade, arquivo ou estado útil para simplificar trabalho, reduzir escopo ou contornar limitação do agente.
+
+## Regressão e rollback
+
+Se uma mudança quebrar comportamento validado:
+
+1. preserve a evidência da falha;
+2. identifique o último estado bom;
+3. corrija a regressão ou restaure o estado bom;
+4. valide novamente;
+5. persista o resultado.
+
+Não empilhe mudanças cegamente sobre um estado conhecido como quebrado.
+
+## Definition of Done
+
+Não declarar uma tarefa concluída apenas porque código foi escrito ou um commit existe.
+
+Aplicar a Definition of Done de `GLOBAL_RULES.md`: resultado realizado, persistido quando necessário, validado, sem regressão conhecida no escopo e sustentado por evidência suficiente.
+
+## Projetos legados
+
+Projetos anteriores a esta Constituição mantêm sua história e seus sistemas locais.
+
+Use `ADOPTION_PROTOCOL.md` para portar a organização de forma incremental. Não apague regras antigas úteis nem reinicie o projeto para fazê-lo “caber” no modelo novo.
 
 ## Segurança e escopo
 
 Trabalhar normalmente em componentes próprios/autorizados. Em controles externos de terceiros, não criar nem aprimorar mecanismos destinados a contornar pagamento, licença, autenticação, integridade/anti-cheat ou outros controles externos.
 
 Se uma operação específica estiver fora de escopo, isole apenas essa operação e continue o restante permitido do projeto.
+
+Regras adicionais de segurança, publicação e distribuição podem ser definidas localmente por projeto.
 
 ## Eficiência
 
