@@ -18,23 +18,23 @@ As palavras-chave universais são definidas em `KEYWORDS.md`.
 Regras mínimas obrigatórias:
 
 ```text
-ataca = ataque contínuo no alvo atual
+ataca = ataque contínuo + absoluto + exaustivo de todo o escopo aplicável
 
-tudo = ataque contínuo + escopo absoluto dentro do alvo atual
-
-ataca tudo = ataque contínuo e exaustivo do escopo atual
+tudo = ataque contínuo quando usado operacionalmente + quantificador absoluto do conjunto indicado
 ```
 
-Quando o usuário disser `ataca`, interpretar como autorização para uma passagem longa, autônoma, profunda e produtiva no estágio/alvo atual.
+`ataca` sozinho já exige cobertura integral do alvo atual. Não existe um nível superior de ataque que dependa da expressão `ataca tudo`.
 
-Quando o usuário disser `tudo` operacionalmente, interpretar também como comando de ataque, mas exigindo cobertura integral de tudo que pertence ao escopo aplicável.
+Quando o usuário disser `ataca`, interpretar como autorização para uma passagem longa, autônoma, profunda e produtiva **até esgotar todo o escopo atual que puder ser executado**.
+
+Quando o usuário disser `tudo` operacionalmente, interpretar também como comando de ataque contínuo e como exigência de cobertura integral do conjunto indicado.
 
 Não transformar nenhum dos dois em tentativa curta seguida de pedido de novo `continua`.
 
 ### Condições válidas de parada
 
-1. estágio/alvo concluído de forma verificável;
-2. bloqueio externo real que impede todo o trabalho útil restante daquele alvo;
+1. escopo atual concluído de forma verificável;
+2. bloqueio externo real que impede todo o trabalho útil restante daquele escopo;
 3. decisão indispensável que somente o usuário pode fornecer;
 4. artefato, hardware, credencial ou validação externa indispensável que não está acessível.
 
@@ -52,7 +52,7 @@ Não encerrar um ataque inteiro porque:
 - um checkpoint foi criado;
 - uma subtarefa específica ficou bloqueada.
 
-Enquanto existir outra rota produtiva e permitida, continuar.
+Enquanto existir outra rota produtiva e permitida dentro do escopo, continuar.
 
 ## 4. Anti-stall
 
@@ -67,6 +67,8 @@ Enquanto existir outra rota produtiva e permitida, continuar.
 
 `tudo` possui regra adicional: além de ser quantificador absoluto, também funciona como comando de ataque contínuo conforme `KEYWORDS.md`.
 
+`ataca` também é exaustivo por definição dentro do escopo atual, mesmo sem a palavra `tudo`.
+
 Para declarar `COMPLETE`:
 
 - inventariar o conjunto de origem;
@@ -77,7 +79,7 @@ Para declarar `COMPLETE`:
 
 Se um único item requerido não puder ser transferido, analisado ou verificado, declarar `INCOMPLETE` e dizer o que falta.
 
-Nunca reduzir silenciosamente `tudo` para “o importante”, “os principais”, “uma amostra” ou “o que deu tempo”.
+Nunca reduzir silenciosamente `ataca` ou `tudo` para “o importante”, “os principais”, “uma amostra” ou “o que deu tempo”.
 
 ## 6. Baseline é patrimônio
 
