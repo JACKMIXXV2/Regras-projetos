@@ -1,26 +1,47 @@
-# AGENTS.md — bootstrap obrigatório
+# AGENTS.md — bootstrap universal obrigatório
 
-Este arquivo é a porta de entrada operacional para qualquer chat/agente que trabalhe nos projetos governados por este repositório.
+Este arquivo é a porta de entrada operacional para qualquer chat, agente, Codex ou ferramenta que trabalhe em qualquer projeto governado por `Regras-projetos`.
+
+Não existe perfil central por projeto. A lei é universal; o estado e as especializações pertencem ao próprio repositório do projeto.
 
 ## Antes de agir
 
 Leia, nesta ordem:
 
-1. `GLOBAL_RULES.md`
-2. `GITHUB_PROTOCOL.md`
-3. o perfil correto em `projects/`
-4. os arquivos de boot/estado apontados pelo perfil no repositório real do projeto
-5. HEAD/checkpoint/evidências atuais
+1. `CONSTITUTION.md`
+2. `GLOBAL_RULES.md`
+3. `GITHUB_PROTOCOL.md`
+4. identifique o repositório real do projeto
+5. leia os arquivos locais de bootstrap/regras/estado existentes nesse projeto
+6. confirme HEAD, branch, checkpoint, evidências, filas e builds atuais quando aplicável
 
-Não peça ao usuário para reexplicar informação que já está persistida e acessível no GitHub.
+Não peça ao usuário para reexplicar informação que já está persistida e acessível.
+
+## Relação entre lei universal e regras locais
+
+Regras locais podem especializar detalhes como:
+
+- branches;
+- versionamento;
+- ordem de boot;
+- categorias de progresso;
+- hardware-alvo;
+- workflows;
+- testes;
+- gates;
+- estrutura interna.
+
+Elas não podem cancelar princípios universais deste repositório.
+
+Quando houver conflito verdadeiro, a lei universal prevalece. Quando houver apenas especialização, as duas valem simultaneamente.
 
 ## Fonte de verdade
 
-O GitHub persistido vence memória parcial, conversa antiga e frontend/spinner.
+GitHub e artefatos persistidos vencem memória parcial, conversa antiga e frontend/spinner.
 
-Nunca recomece investigação, recuperação, portabilidade, build ou reconstrução do zero se o repositório já documenta estado válido.
+Nunca reinicie investigação, recuperação, portabilidade, build, reconstrução ou implementação do zero se o projeto já possui estado válido persistido.
 
-## Semântica de `ataca`
+## Semântica universal de `ataca`
 
 `ataca` autoriza uma passagem longa e autônoma no alvo atual.
 
@@ -35,7 +56,7 @@ Enquanto houver trabalho útil, permitido e executável:
 - use outra frente produtiva enquanto uma dependência externa roda;
 - não peça novo `continua` para cada subetapa.
 
-Pare somente por conclusão verificável, bloqueio externo real ou decisão indispensável que só o usuário pode fornecer.
+Pare somente pelas condições universais definidas em `GLOBAL_RULES.md`.
 
 ## Anti-lite / anti-stall
 
@@ -47,7 +68,7 @@ Não deixe uma única etapa opaca consumir indefinidamente a passagem sem checkp
 
 Mudança material não termina no chat.
 
-Quando houver alteração real, persistir no repositório oficial correspondente e registrar evidência/checkpoint compatível com o projeto.
+Quando houver alteração real, persistir no repositório oficial correspondente e registrar evidência/checkpoint compatível com aquele projeto.
 
 Não sobrescrever estado mais novo sem antes reler HEAD e o arquivo atual.
 
@@ -79,16 +100,16 @@ Não remover, reescrever, degradar ou “corrigir” silenciosamente baseline fu
 
 Trabalhar normalmente em componentes próprios/autorizados. Em controles externos de terceiros, não criar nem aprimorar mecanismos destinados a contornar pagamento, licença, autenticação, integridade/anti-cheat ou outros controles externos.
 
-Se uma operação específica estiver fora de escopo, isole apenas essa operação e continue o restante permitido do projeto. Não use uma limitação pontual como desculpa para abandonar tarefas independentes.
+Se uma operação específica estiver fora de escopo, isole apenas essa operação e continue o restante permitido do projeto.
 
 ## Eficiência
 
-Para GitHub, prefira o conector GitHub e os scripts existentes nos repositórios.
+Use primeiro a ferramenta mais direta que resolva a tarefa.
 
-Não abra Work/Codex por hábito para operações que podem ser feitas diretamente. Preserve o limite dessas ferramentas para trabalho que realmente precise delas.
+Para GitHub, prefira o conector GitHub e scripts existentes. Não abra Work/Codex por hábito para operações que podem ser feitas diretamente. Preserve ferramentas mais pesadas para trabalho que realmente precise delas.
 
 ## Relatório
 
-Relatórios substanciais devem ser consolidados, objetivos e baseados no estado persistido. Quando o projeto usa barras, preserve todas as barras obrigatórias e marque somente avanços reais.
+Relatórios substanciais devem ser consolidados, objetivos e baseados no estado persistido. Quando o projeto usa barras, preserve todas as barras definidas localmente e marque somente avanços reais.
 
-Ao concluir uma passagem, informe o que mudou, o que foi validado, o commit/build relevante e o único bloqueio real restante, se existir.
+Ao concluir uma passagem, informe o que mudou, o que foi validado, o commit/build relevante e o bloqueio real restante, se existir.
