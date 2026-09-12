@@ -10,12 +10,15 @@ Sempre que possível:
 
 1. confirmar o repositório correto;
 2. confirmar a branch correta;
-3. ler HEAD e estado atual;
-4. buscar o arquivo atual e seu SHA quando a operação for update/delete;
-5. verificar regras locais, exceções autorizadas, checkpoint e estado canônico do projeto;
-6. só então escrever.
+3. verificar se a governança central está sincronizada conforme `GOVERNANCE_SYNC.md`;
+4. ler HEAD e estado atual;
+5. buscar o arquivo atual e seu SHA quando a operação for update/delete;
+6. verificar regras locais, exceções autorizadas, checkpoint e estado canônico do projeto;
+7. só então escrever.
 
 Nunca sobrescrever um arquivo com base em cópia antiga do chat se o GitHub possui versão mais nova.
+
+Se o projeto registrar `GOVERNANCE_LAST_CHECKED`, não assumir que esse commit ainda é o HEAD central sem verificar.
 
 ## 2. Branch não é detalhe
 
@@ -141,7 +144,28 @@ Quando a tarefa for adaptação para a governança universal, obedecer também `
 
 Nesse caso, não substituir cegamente a organização local pela central. Reconciliar as duas e preservar o que cada uma tem de melhor.
 
-## 13. Regras locais e exceções de Git
+## 13. Sincronização de governança
+
+Quando `Regras-projetos` mudar desde o último commit central revisado pelo projeto:
+
+1. comparar o commit registrado com o HEAD central;
+2. revisar os arquivos de governança alterados;
+3. classificar o impacto conforme `GOVERNANCE_SYNC.md`;
+4. aplicar ou reconciliar mudanças locais necessárias;
+5. persistir a adaptação;
+6. atualizar o marcador local apenas depois da revisão real.
+
+O marcador recomendado é:
+
+```text
+GOVERNANCE_LAST_CHECKED: <commit-sha-central>
+```
+
+Não fazer commit que apenas atualiza esse marcador sem ter revisado o diff correspondente.
+
+Se a governança central mudar durante um ataque longo, proteger o trabalho com checkpoint quando necessário, revisar a nova lei e continuar sem descartar progresso válido.
+
+## 14. Regras locais e exceções de Git
 
 Um projeto pode ter regras próprias de branch, release, versionamento, CI, commit, artifact ou fluxo de validação.
 
@@ -151,13 +175,13 @@ Se o usuário autorizar explicitamente uma exceção que contradiga uma regra un
 
 Exceções duradouras devem ser registradas localmente.
 
-## 14. Definition of Done no GitHub
+## 15. Definition of Done no GitHub
 
 A presença de commit não prova, sozinha, conclusão.
 
 Quando a tarefa exige validação, um estado só deve ser tratado como concluído depois de cumprir a Definition of Done de `GLOBAL_RULES.md`.
 
-## 15. Fonte de verdade quando a interface falha
+## 16. Fonte de verdade quando a interface falha
 
 Ordem de confiança padrão:
 
