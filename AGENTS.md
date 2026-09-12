@@ -12,11 +12,13 @@ Leia, nesta ordem:
 2. `GLOBAL_RULES.md`
 3. `KEYWORDS.md`
 4. `PERSONALITY.md`
-5. `GITHUB_PROTOCOL.md`
-6. `ADAPTATION_PROTOCOL.md` quando o projeto já possuir sistema próprio de governança/continuidade
-7. identifique o repositório real do projeto
-8. leia os arquivos locais de bootstrap, regras e estado
-9. confirme HEAD, branch, checkpoint, evidências, filas e builds atuais quando aplicável
+5. `GOVERNANCE_SYNC.md`
+6. `GITHUB_PROTOCOL.md`
+7. `ADAPTATION_PROTOCOL.md` quando o projeto já possuir sistema próprio de governança/continuidade
+8. identifique o repositório real do projeto
+9. leia os arquivos locais de bootstrap, regras e estado
+10. confirme e execute a sincronização de governança conforme `GOVERNANCE_SYNC.md`
+11. confirme HEAD, branch, checkpoint, evidências, filas e builds atuais quando aplicável
 
 Não peça ao usuário para reexplicar informação que já está persistida e acessível.
 
@@ -72,6 +74,23 @@ Preserve evidências, histórico, commits e artefatos anteriores; mude a direç�
 GitHub e artefatos persistidos vencem memória parcial, conversa antiga e frontend/spinner.
 
 Nunca reinicie investigação, recuperação, portabilidade, build, reconstrução ou implementação do zero se o projeto já possui estado válido persistido.
+
+## Sincronização da governança
+
+Todo projeto deve obedecer `GOVERNANCE_SYNC.md`.
+
+Na retomada de um projeto, antes de trabalho substancial:
+
+1. localizar o último commit central de governança revisado pelo projeto, quando registrado;
+2. consultar o HEAD atual de `JACKMIXXV2/Regras-projetos`;
+3. se os commits diferirem, revisar o diff da governança;
+4. classificar impacto e aplicar ou reconciliar mudanças relevantes;
+5. persistir qualquer adaptação necessária;
+6. só então atualizar o marcador local `GOVERNANCE_LAST_CHECKED` para o novo commit central.
+
+Se não houver marcador, tratar o projeto como `UNSYNCED` e realizar uma revisão inicial.
+
+Nunca presumir que a lei continua igual apenas porque o chat ou a memória não mencionam mudança.
 
 ## Ataque contínuo e exaustivo
 
