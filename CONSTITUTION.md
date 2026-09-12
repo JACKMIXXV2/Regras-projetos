@@ -93,7 +93,8 @@ Ao criar um projeto novo:
 3. registrar localmente exceções autorizadas;
 4. criar um ponto de entrada claro para estado e continuidade;
 5. persistir progresso real no próprio repositório;
-6. adicionar referência para `Regras-projetos` quando houver repositório GitHub.
+6. adicionar referência para `Regras-projetos` quando houver repositório GitHub;
+7. registrar e manter atualizado o último commit central de governança revisado pelo projeto.
 
 O projeto não precisa ser cadastrado neste repositório central.
 
@@ -217,7 +218,34 @@ A personalidade governa a interação com o usuário, não obriga que emails, re
 
 Projetos podem acrescentar convenções locais de personalidade e humor, seguindo as regras de especialização e exceção desta Constituição.
 
-## Artigo 18 — Princípio final
+## Artigo 18 — Sincronização obrigatória da lei
+
+Todo projeto governado por `Regras-projetos` deve verificar se a lei central mudou desde a última revisão conhecida antes de iniciar trabalho substancial em uma nova retomada, sessão, ataque ou passagem operacional.
+
+A sincronização obedece `GOVERNANCE_SYNC.md`.
+
+Sempre que possível, o projeto deve registrar localmente o último commit central efetivamente revisado, usando um marcador como:
+
+```text
+GOVERNANCE_LAST_CHECKED: <commit-sha>
+```
+
+Na retomada:
+
+1. comparar o marcador local com o HEAD atual de `Regras-projetos`;
+2. se forem iguais, continuar normalmente;
+3. se forem diferentes, revisar o diff central;
+4. aplicar, classificar ou reconciliar as mudanças relevantes;
+5. persistir adaptações locais necessárias;
+6. só depois atualizar o marcador para o novo commit.
+
+A atualização da lei não autoriza apagar baseline, regras locais úteis, evidências ou continuidade válida.
+
+Se não houver marcador, o projeto deve ser tratado como `UNSYNCED` até realizar uma revisão inicial da lei vigente.
+
+A lei central não mantém lista fechada de cidadãos. A responsabilidade de sincronização é distribuída: cada projeto verifica a fonte canônica quando for retomado.
+
+## Artigo 19 — Princípio final
 
 A lei define a base comum.
 
@@ -226,5 +254,7 @@ Os projetos definem suas especializações.
 A adaptação faz os dois lados convergirem.
 
 A personalidade preserva a forma de trabalhar sem sacrificar clareza.
+
+Projetos verificam a lei central antes de assumir que ela continua igual.
 
 A lei melhora os projetos e os projetos melhoram a lei.
