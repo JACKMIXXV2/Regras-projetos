@@ -4,7 +4,7 @@ Este repositório é a **fonte canônica de governança** para todos os projetos
 
 Ele não pertence a nenhum projeto específico. Projetos atuais e futuros são cidadãos desta lei.
 
-A finalidade é simples: qualquer chat, agente, Codex ou ferramenta que entre em um projeto deve saber **como continuar, atacar, validar, persistir e reportar trabalho** sem inventar um método diferente a cada conversa.
+A finalidade é simples: qualquer chat, agente, Codex ou ferramenta que entre em um projeto deve saber **como continuar, atacar, validar, persistir, reportar e se comportar** sem inventar um método diferente a cada conversa.
 
 ## Princípio central
 
@@ -13,6 +13,7 @@ Regras-projetos = lei-base universal
 repos dos projetos = cidadãos autônomos
 regras locais = leis específicas de cada cidadão
 exceções autorizadas pelo usuário = podem prevalecer localmente
+PERSONALITY.md = comportamento-base da interação
 estado/checkpoints/builds = fatos atuais de cada cidadão
 chat = contexto auxiliar
 frontend/spinner = nunca fonte isolada de verdade
@@ -27,10 +28,29 @@ Para qualquer projeto:
 1. `CONSTITUTION.md`
 2. `GLOBAL_RULES.md`
 3. `KEYWORDS.md`
-4. `GITHUB_PROTOCOL.md`
-5. `AGENTS.md`
-6. `ADAPTATION_PROTOCOL.md` quando o projeto já possuir sistema próprio de governança/continuidade
-7. então o repositório do projeto: entrypoint, regras locais, HEAD, estado, checkpoint, evidências e fila atual
+4. `PERSONALITY.md`
+5. `GITHUB_PROTOCOL.md`
+6. `AGENTS.md`
+7. `ADAPTATION_PROTOCOL.md` quando o projeto já possuir sistema próprio de governança/continuidade
+8. então o repositório do projeto: entrypoint, regras locais, HEAD, estado, checkpoint, evidências e fila atual
+
+## Personalidade universal
+
+`PERSONALITY.md` define o estilo-base da interação com o usuário.
+
+A personalidade é direta, informal, crítica, irreverente e orientada à execução.
+
+São permitidos, quando couberem:
+
+- sarcasmo;
+- ironia;
+- palavrão sem censura artificial;
+- humor sobre bugs, tooling e situações absurdas;
+- referências internas pertinentes ao histórico dos projetos;
+- discordância clara quando a ideia do usuário estiver errada;
+- recomendação própria quando houver base técnica suficiente.
+
+A personalidade não pode reduzir precisão nem transformar todo artefato externo em piada interna. Texto destinado a terceiros segue o tom adequado ao próprio artefato.
 
 ## Palavras-chave universais
 
@@ -52,7 +72,7 @@ Não existe uma palavra-chave especial `ataca tudo`. Essa expressão é apenas l
 
 A lei universal é o comportamento padrão.
 
-Cada projeto **pode e deve** possuir regras locais quando precisar de branches, gates, workflows, hardware, versionamento, relatórios, segurança, estrutura, releases ou qualquer outra especialização própria.
+Cada projeto **pode e deve** possuir regras locais quando precisar de branches, gates, workflows, hardware, versionamento, relatórios, segurança, estrutura, releases, personalidade local ou qualquer outra especialização própria.
 
 Uma regra local normalmente especializa a lei universal.
 
