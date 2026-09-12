@@ -25,23 +25,13 @@ Regras universais:
 
 - não fazer merge cego entre branches com papéis diferentes;
 - não assumir que `main` contém laboratório, provenance ou estado experimental;
-- não mover ref à força para “resolver” divergência sem entender o que seria perdido;
+- não mover ref à força para resolver divergência sem entender o que seria perdido;
 - se HEAD mudou durante o trabalho, reler e reconciliar antes de atualizar o mesmo caminho;
-- obedecer regras locais de branch e exceções explicitamente autorizadas para aquele projeto.
+- obedecer regras locais de branch e exceções explicitamente autorizadas.
 
 ## 3. Commits
 
 Um commit deve representar mudança material coerente.
-
-Preferir mensagens que revelem a intenção, por exemplo:
-
-```text
-fix: corrigir falha de inicialização
-feat: adicionar validação do novo fluxo
-recovery: registrar nova evidência
-chore: atualizar manifesto de artefatos
-rules: atualizar governança universal
-```
 
 Não usar commit vazio apenas para simular progresso.
 
@@ -64,8 +54,6 @@ Criar checkpoint ou commit seguro quando aplicável:
 - quando reconstruir o trabalho em caso de falha seria caro.
 
 Checkpoint não significa encerramento do ataque.
-
-O projeto pode definir localmente formato, branch e frequência mais específicos.
 
 ## 6. CI, build e runtime
 
@@ -116,8 +104,6 @@ Se uma alteração quebrar estado ou comportamento previamente validado:
 6. executar novamente a validação aplicável;
 7. registrar a causa e o resultado.
 
-Rollback não deve apagar a trilha que explica a regressão.
-
 ## 10. Conflitos e concorrência
 
 Se outra mudança chegar primeiro:
@@ -151,7 +137,9 @@ Quando o pedido for `migração completa`, `espelho 1:1`, `workspace inteiro` ou
 - verificar o que ficou de fora;
 - nunca declarar `COMPLETE` se houver item requerido ausente.
 
-Quando a migração for especificamente para a nova governança universal, obedecer também `ADOPTION_PROTOCOL.md`.
+Quando a tarefa for adaptação para a governança universal, obedecer também `ADAPTATION_PROTOCOL.md`.
+
+Nesse caso, não substituir cegamente a organização local pela central. Reconciliar as duas e preservar o que cada uma tem de melhor.
 
 ## 13. Regras locais e exceções de Git
 
@@ -161,13 +149,13 @@ Por padrão, elas especializam este protocolo.
 
 Se o usuário autorizar explicitamente uma exceção que contradiga uma regra universal deste arquivo, a exceção pode prevalecer naquele projeto e naquele escopo.
 
-Exceções duradouras devem ser registradas localmente e não devem ser promovidas automaticamente a regra de outros projetos.
+Exceções duradouras devem ser registradas localmente.
 
 ## 14. Definition of Done no GitHub
 
 A presença de commit não prova, sozinha, conclusão.
 
-Quando a tarefa exige validação, um estado só deve ser tratado como concluído depois de cumprir a Definition of Done de `GLOBAL_RULES.md`, incluindo persistência, validação aplicável, evidência e ausência de regressão conhecida no escopo verificado.
+Quando a tarefa exige validação, um estado só deve ser tratado como concluído depois de cumprir a Definition of Done de `GLOBAL_RULES.md`.
 
 ## 15. Fonte de verdade quando a interface falha
 
