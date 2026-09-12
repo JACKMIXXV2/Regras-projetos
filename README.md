@@ -37,12 +37,14 @@ Para qualquer projeto:
 `KEYWORDS.md` define comandos operacionais estáveis.
 
 ```text
-ataca = ataque contínuo no alvo atual
+ataca = ataque contínuo + absoluto + exaustivo de todo o escopo aplicável
 
-tudo = ataque contínuo + escopo absoluto dentro do alvo atual
-
-ataca tudo = ataque contínuo e exaustivo do escopo atual
+tudo = ataque contínuo quando usado operacionalmente + quantificador absoluto do conjunto indicado
 ```
+
+`ataca` sozinho já significa cobrir integralmente o alvo atual, atravessando subtarefas, correções, checkpoints, testes, commits e pivôs úteis até esgotar o escopo executável.
+
+Não existe uma palavra-chave especial `ataca tudo`. Essa expressão é apenas linguagem natural combinando duas palavras já definidas. Ela não ativa um nível superior de ataque, porque `ataca` já é exaustivo.
 
 `tudo` também é quantificador literal. Não significa “os principais”, “o importante” ou “uma parte representativa”.
 
@@ -111,6 +113,8 @@ O protocolo universal de leitura, escrita, SHA, branch, commit, CI, conflito, bu
 ## Completude
 
 Palavras como `tudo`, `completo`, `1:1`, `inteiro`, `absoluto`, `full`, `total` e equivalentes são literais, salvo redução explícita de escopo autorizada pelo usuário.
+
+`ataca` também exige cobertura exaustiva do escopo atual mesmo quando nenhuma dessas palavras aparece.
 
 Se faltar qualquer parte do escopo pedido, o resultado é `INCOMPLETE` e deve dizer exatamente o que falta.
 
