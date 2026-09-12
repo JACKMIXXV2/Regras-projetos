@@ -1,12 +1,14 @@
-# GLOBAL_RULES.md — regras globais dos projetos
+# GLOBAL_RULES.md — regras universais dos projetos
 
-Estas regras valem para Mid Pogo, Humo Negro, Walten Mod Loader e WinterWonder, salvo regra específica mais restritiva no perfil do projeto ou no próprio repositório canônico.
+Estas regras valem para **todos os projetos atuais e futuros** governados por `Regras-projetos`.
+
+Não existe lista fechada de projetos. Um projeto novo não precisa ser cadastrado aqui para passar a obedecer estas regras.
 
 ## 1. Continuidade acima de conversa
 
-- O repositório oficial do projeto é a fonte persistente de verdade.
+- O repositório oficial do projeto é a fonte persistente de verdade sobre seu estado.
 - Não reiniciar trabalho validado porque o chat mudou, o frontend perdeu contexto ou um spinner voltou para estado antigo.
-- Antes de agir, ler HEAD, estado atual, último checkpoint e evidências apontadas pelo perfil do projeto.
+- Antes de agir, ler HEAD, estado atual, último checkpoint, evidências e filas existentes quando aplicável.
 - Histórico de conversa é contexto auxiliar, não autoridade superior ao estado persistido.
 
 ## 2. `ataca` = autorização contínua
@@ -31,9 +33,9 @@ Não transformar `ataca` em uma tentativa curta seguida de pedido de novo `conti
 1. estágio/alvo concluído de forma verificável;
 2. bloqueio externo real que impede todo o trabalho útil restante daquele alvo;
 3. decisão indispensável que somente o usuário pode fornecer;
-4. artefato/hardware/credencial externa indispensável que não está acessível.
+4. artefato, hardware, credencial ou validação externa indispensável que não está acessível.
 
-Antes de parar por bloqueio, concluir tudo que ainda for possível sem esse bloqueio.
+Antes de parar por bloqueio, concluir tudo que ainda for possível sem ele.
 
 ## 3. Anti-lite
 
@@ -65,7 +67,7 @@ Para declarar `COMPLETE`:
 - inventariar o conjunto de origem;
 - incluir todos os tipos de artefato pertencentes ao escopo;
 - comparar origem e destino;
-- validar contagens/caminhos/hashes quando aplicável;
+- validar contagens, caminhos e hashes quando aplicável;
 - listar exceções explicitamente.
 
 Se um único item requerido não puder ser transferido ou verificado, declarar `INCOMPLETE` e dizer o que falta.
@@ -89,7 +91,7 @@ Nunca inventar:
 - resultado de teste;
 - áudio;
 - firmware;
-- URL/API response;
+- URL ou resposta de API;
 - progresso;
 - conclusão.
 
@@ -97,58 +99,81 @@ Use `NOT_PROVEN`, `UNKNOWN`, `CANDIDATE`, `BLOCKED` ou equivalente em vez de pre
 
 ## 8. Barras e progresso
 
-Quando o projeto usa barras:
+Quando um projeto usa barras:
 
-- preservar todas as categorias obrigatórias entre relatórios;
+- preservar todas as categorias definidas localmente entre relatórios;
 - `>>>` somente em linha que realmente avançou;
 - mostrar `anterior -> novo` quando houver avanço;
-- nova versão/commit/documentação não sobe barra por si só;
+- nova versão, commit ou documentação não sobe barra por si só;
 - percentual geral deve derivar do estado persistido, não de estética;
 - evidência nova pode reduzir uma barra superestimada.
 
 ## 9. Regra de 100% por estágio
 
-Quando o projeto define estágios com gate:
+Quando um projeto define estágios com gate:
 
 - 85%, 90% ou 99% ainda significam estágio aberto;
-- não abandonar estágio aberto para “começar a próxima coisa” só porque a parte restante é chata;
-- se a parte final depende de hardware/humano/ambiente externo, concluir primeiro todo o pré-gate executável e registrar exatamente o gate restante;
+- não abandonar estágio aberto para começar o seguinte apenas porque a parte restante é difícil ou inconveniente;
+- se a parte final depende de hardware, humano ou ambiente externo, concluir primeiro todo o pré-gate executável e registrar exatamente o gate restante;
 - não usar trabalho do estágio seguinte para fingir que o anterior estava completo.
 
 ## 10. Correção de bug
 
-Quando o usuário reporta bug de build/EXE/APK/JAR/runtime:
+Quando o usuário reporta bug de build, EXE, APK, JAR, runtime, serviço ou outro artefato testável:
 
-1. tratar log/print/comportamento como evidência da versão testada;
+1. tratar log, print ou comportamento como evidência da versão testada;
 2. diagnosticar a causa;
 3. corrigir no produto quando a correção pertence ao produto;
-4. adicionar teste/contrato quando possível;
-5. criar nova versão/build identificável quando o projeto exigir versionamento por mudança;
+4. adicionar teste ou contrato quando possível;
+5. criar nova versão/build identificável quando a política local exigir versionamento por mudança;
 6. persistir em commit;
-7. executar build/CI/teste aplicável;
+7. executar build, CI ou teste aplicável;
 8. entregar o novo artefato, não fingir que o artefato antigo mudou magicamente.
 
-## 11. Estado volátil não pertence ao repo central
+## 11. Estado volátil pertence ao projeto
 
-Este repositório central não deve virar cópia congelada de porcentagens, versões e filas atuais.
+Este repositório central não deve guardar cópias congeladas de versão, porcentagem, estágio, fila, commit, build ou próximo alvo de projetos individuais.
 
-Regras estáveis ficam aqui. Estado atual fica no repositório do projeto.
+A lei fica aqui. O estado atual fica no repositório do cidadão.
 
-## 12. Segurança e isolamento de operações
+## 12. Regras locais podem especializar, não revogar
 
-- Componentes próprios/autorizados podem ser analisados, depurados, instrumentados e testados normalmente.
-- Não criar/aprimorar mecanismos para contornar controles externos de pagamento, licença, autenticação, integridade/anti-cheat ou equivalentes de terceiros.
+Um projeto pode criar regras próprias para sua realidade técnica.
+
+Essas regras podem definir:
+
+- branches;
+- versionamento;
+- ordem de leitura;
+- estruturas de pasta;
+- categorias de progresso;
+- hardware-alvo;
+- gates;
+- testes;
+- CI;
+- formato de release;
+- contratos técnicos.
+
+Elas não podem cancelar regras universais deste repositório.
+
+Se houver conflito verdadeiro, a regra universal vence. Se não houver conflito, a regra local especializa a aplicação.
+
+## 13. Segurança e isolamento de operações
+
+- Componentes próprios ou autorizados podem ser analisados, depurados, instrumentados e testados normalmente.
+- Não criar nem aprimorar mecanismos destinados a contornar controles externos de pagamento, licença, autenticação, integridade, anti-cheat ou equivalentes de terceiros.
 - Se uma operação específica estiver limitada, bloquear só aquela operação e continuar as demais rotas independentes.
 
-## 13. Eficiência e uso de ferramentas
+## 14. Eficiência e uso de ferramentas
 
-- Preferir GitHub direto para leitura/escrita de repositório.
+- Preferir a ferramenta mais direta que execute o trabalho corretamente.
+- Preferir GitHub direto para leitura e escrita de repositório.
 - Preferir scripts e automações já existentes no projeto.
 - Não consumir Work/Codex quando ferramentas diretas resolvem o mesmo trabalho.
 - Não fazer micro-relatórios no lugar de executar ações disponíveis.
 - Não prometer trabalho futuro em background; execute o máximo possível na passagem atual.
 
-## 14. Relatório consolidado
+## 15. Relatório consolidado
 
 Ao final de um ataque substancial, o relatório deve separar claramente:
 
@@ -156,7 +181,7 @@ Ao final de um ataque substancial, o relatório deve separar claramente:
 - o que foi alterado;
 - o que foi validado;
 - o que apenas foi preparado;
-- commit/build/artefato correspondente;
+- commit, build ou artefato correspondente;
 - avanço real de barras, se houver;
 - bloqueio externo restante, se houver.
 
