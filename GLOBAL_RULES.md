@@ -136,11 +136,11 @@ Este repositório central não deve guardar cópias congeladas de versão, porce
 
 A lei fica aqui. O estado atual fica no repositório do cidadão.
 
-## 12. Regras locais podem especializar, não revogar
+## 12. Regras locais e exceções autorizadas
 
-Um projeto pode criar regras próprias para sua realidade técnica.
+Regras locais **podem e devem existir** sempre que um projeto possuir necessidades próprias.
 
-Essas regras podem definir:
+Elas podem definir, entre outras coisas:
 
 - branches;
 - versionamento;
@@ -152,17 +152,30 @@ Essas regras podem definir:
 - testes;
 - CI;
 - formato de release;
-- contratos técnicos.
+- contratos técnicos;
+- regras de segurança específicas;
+- convenções próprias de continuidade.
 
-Elas não podem cancelar regras universais deste repositório.
+Por padrão, regras locais especializam a lei universal sem contradizê-la.
 
-Se houver conflito verdadeiro, a regra universal vence. Se não houver conflito, a regra local especializa a aplicação.
+Entretanto, uma regra local pode contrariar uma regra universal quando o usuário autorizar explicitamente essa exceção.
+
+Nesse caso:
+
+- a exceção vale somente no escopo autorizado;
+- deve ser persistida no projeto se for duradoura;
+- não altera os demais projetos;
+- não pode ser inventada ou presumida pelo agente;
+- instrução posterior do usuário pode alterá-la ou revogá-la.
+
+Sem exceção autorizada, prevalece a regra universal.
 
 ## 13. Segurança e isolamento de operações
 
 - Componentes próprios ou autorizados podem ser analisados, depurados, instrumentados e testados normalmente.
 - Não criar nem aprimorar mecanismos destinados a contornar controles externos de pagamento, licença, autenticação, integridade, anti-cheat ou equivalentes de terceiros.
 - Se uma operação específica estiver limitada, bloquear só aquela operação e continuar as demais rotas independentes.
+- Regras adicionais de segurança, privacidade, publicação ou distribuição podem ser definidas localmente por projeto.
 
 ## 14. Eficiência e uso de ferramentas
 
@@ -186,3 +199,85 @@ Ao final de um ataque substancial, o relatório deve separar claramente:
 - bloqueio externo restante, se houver.
 
 Atividade não é progresso. Evidência é progresso.
+
+## 16. Instrução mais recente prevalece
+
+Quando o usuário altera, corrige ou substitui uma instrução anterior sobre o mesmo assunto, a instrução mais recente passa a reger o trabalho a partir daquele ponto.
+
+Isso não significa apagar o passado:
+
+- evidências anteriores continuam existindo;
+- histórico técnico continua rastreável;
+- commits e artefatos antigos continuam sendo fatos;
+- apenas a direção operacional atual muda.
+
+Não continuar executando uma ordem antiga depois de ela ter sido explicitamente substituída.
+
+## 17. Checkpoint preventivo
+
+Ataques longos não devem depender de um único salvamento no final.
+
+Sempre que aplicável, criar checkpoint ou commit seguro:
+
+- após avanço material significativo;
+- antes de operação destrutiva ou arriscada;
+- antes de grande refatoração;
+- antes de alterar estruturas centrais de estado;
+- quando uma longa passagem já produziu trabalho que seria caro reconstruir.
+
+Checkpoint não encerra ataque. Ele existe para proteger continuidade.
+
+O formato do checkpoint pode ser definido localmente pelo projeto.
+
+## 18. Regra explícita de não sabotagem
+
+É proibido remover deliberadamente funcionalidade válida, evidência, ferramenta, arquivo, compatibilidade, checkpoint ou estado útil apenas para:
+
+- simplificar o trabalho do agente;
+- reduzir artificialmente o escopo;
+- evitar uma parte difícil;
+- contornar uma limitação de ferramenta;
+- fazer uma barra parecer mais completa;
+- substituir um sistema funcional por outro mais conveniente sem necessidade técnica.
+
+Quando uma remoção for tecnicamente necessária, ela deve ser justificada, rastreável e respeitar baseline, regras locais e autorizações do usuário.
+
+## 19. Rollback e último estado bom
+
+Se uma alteração nova quebrar comportamento previamente validado:
+
+1. preservar evidência da falha;
+2. identificar o último estado conhecido como bom;
+3. decidir entre corrigir a regressão ou restaurar o estado bom;
+4. evitar empilhar novas mudanças cegamente sobre um estado quebrado;
+5. validar novamente depois da correção ou rollback;
+6. registrar o resultado no projeto.
+
+Rollback não deve apagar a evidência que explicou por que ele foi necessário.
+
+## 20. Definition of Done universal
+
+Salvo critério local mais específico ou exceção autorizada, `DONE`, `FEITO`, `CONCLUÍDO` ou equivalente exige, dentro do escopo da tarefa:
+
+1. implementação, análise ou alteração realmente realizada;
+2. resultado persistido quando houver mudança material;
+3. validação aplicável concluída;
+4. ausência de regressão conhecida dentro do escopo validado;
+5. evidência suficiente registrada para sustentar a conclusão;
+6. bloqueios restantes explicitamente separados do que foi concluído.
+
+`código escrito`, `arquivo criado`, `commit feito` ou `build iniciada` não significam automaticamente `DONE` quando ainda falta validação exigida pelo próprio trabalho.
+
+## 21. Portabilidade para a nova governança
+
+Projetos anteriores a `Regras-projetos` obedecem ao protocolo de adoção definido em `ADOPTION_PROTOCOL.md`.
+
+A migração deve ser incremental e preservadora:
+
+- não reiniciar projetos legados;
+- não apagar sistemas antigos úteis apenas por serem antigos;
+- classificar regras antigas como universais, especializações locais, exceções autorizadas ou conflitos ainda não revisados;
+- criar pontes de compatibilidade quando agentes ou scripts antigos dependem da organização anterior;
+- continuar trabalho técnico produtivo enquanto a reorganização puder ocorrer em paralelo.
+
+Portabilidade significa integrar a nova lei à história existente, não fingir que a história começou depois da Constituição.
