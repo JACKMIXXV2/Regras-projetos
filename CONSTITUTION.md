@@ -16,22 +16,24 @@ Se um repositório, laboratório, mod, app, ferramenta, experimento ou workspace
 
 Nenhuma atualização desta Constituição deve exigir adicionar cada projeto individualmente a uma tabela central.
 
-## Artigo 3 — Supremacia
+## Artigo 3 — Hierarquia e regras locais
 
-Hierarquia operacional:
+A lei universal é a base padrão de todos os projetos, mas **regras locais são esperadas e necessárias** quando um projeto possui necessidades próprias.
+
+Hierarquia operacional normal:
 
 ```text
 1. Constituição e regras universais de Regras-projetos
-2. regras locais compatíveis do projeto
+2. regras locais do projeto
 3. estado/checkpoints/evidências persistidos do projeto
 4. resultados de CI/build/runtime
 5. histórico de conversa
 6. frontend/spinner
 ```
 
-Uma regra local pode especializar a lei, mas não revogá-la.
+Uma regra local pode especializar a aplicação da lei para aquele projeto.
 
-Exemplo válido:
+Exemplo:
 
 ```text
 Lei universal: confirme branch e HEAD antes de escrever.
@@ -39,15 +41,24 @@ Regra local: neste projeto, recuperação acontece na branch lab.
 Resultado: use lab e confirme HEAD antes de escrever.
 ```
 
-Exemplo inválido:
+## Artigo 4 — Exceções locais autorizadas pelo usuário
 
-```text
-Lei universal: não sobrescrever estado mais novo cegamente.
-Regra local: pode substituir qualquer arquivo sem reler HEAD.
-Resultado: regra local inválida por conflito.
-```
+Uma regra local **pode contrariar ou substituir uma regra universal** quando o usuário autorizar explicitamente essa exceção para aquele projeto, contexto ou operação.
 
-## Artigo 4 — Autonomia dos projetos
+Uma exceção autorizada:
+
+- deve ter escopo claro;
+- deve ser registrada no próprio projeto quando for persistente;
+- não altera a Constituição para os demais projetos;
+- não deve ser presumida por semelhança com outro projeto;
+- pode ser revogada ou modificada por instrução posterior do usuário;
+- vale apenas dentro dos limites da autorização concedida.
+
+Sem autorização explícita para a exceção, vale a regra universal.
+
+A instrução mais recente do usuário sobre o mesmo assunto prevalece sobre uma instrução anterior, preservando-se fatos, evidências e histórico já produzidos.
+
+## Artigo 5 — Autonomia dos projetos
 
 Cada projeto mantém em seu próprio repositório:
 
@@ -55,6 +66,7 @@ Cada projeto mantém em seu próprio repositório:
 - assets;
 - ferramentas;
 - regras técnicas específicas;
+- exceções autorizadas;
 - branches;
 - versionamento;
 - estado atual;
@@ -68,7 +80,7 @@ Cada projeto mantém em seu próprio repositório:
 
 A Constituição não deve duplicar estado efêmero desses projetos.
 
-## Artigo 5 — Cidadania de projeto
+## Artigo 6 — Cidadania de projeto
 
 Um projeto é considerado governado assim que for tratado como projeto do usuário.
 
@@ -80,50 +92,68 @@ https://github.com/JACKMIXXV2/Regras-projetos
 
 A ausência temporária desse arquivo não revoga a lei. Ele é um mecanismo de descoberta, não a fonte da autoridade.
 
-## Artigo 6 — Projetos futuros
+## Artigo 7 — Projetos futuros
 
 Ao criar um projeto novo:
 
 1. aplicar esta Constituição desde o início;
-2. manter regras locais apenas para necessidades específicas;
-3. não copiar regras universais desnecessariamente;
-4. criar um ponto de entrada local claro para estado e continuidade;
-5. persistir progresso real no próprio repositório;
-6. adicionar referência para `Regras-projetos` quando houver repositório GitHub.
+2. manter regras locais para necessidades específicas;
+3. registrar localmente exceções autorizadas pelo usuário;
+4. não copiar regras universais desnecessariamente;
+5. criar um ponto de entrada local claro para estado e continuidade;
+6. persistir progresso real no próprio repositório;
+7. adicionar referência para `Regras-projetos` quando houver repositório GitHub.
 
 O projeto não precisa ser cadastrado neste repositório central.
 
-## Artigo 7 — Semântica universal de ataque
+## Artigo 8 — Projetos legados e portabilidade
+
+Projetos criados antes desta Constituição não devem ser reestruturados cegamente nem tratados como incorretos por utilizarem sistemas antigos de regras, handoff, continuidade, branches ou checkpoints.
+
+Sua adoção deve obedecer `ADOPTION_PROTOCOL.md`.
+
+Princípios obrigatórios da portabilidade:
+
+- preservar continuidade e estado já validado;
+- preservar regras locais úteis;
+- classificar conflitos em vez de apagá-los;
+- registrar exceções autorizadas;
+- adaptar a organização sem reiniciar o projeto;
+- permitir migração incremental sem congelar trabalho técnico produtivo.
+
+A nova governança deve envolver o projeto existente, não destruir sua história para fingir que ele nasceu hoje.
+
+## Artigo 9 — Semântica universal de ataque
 
 A palavra `ataca`, quando usada para autorizar trabalho em um projeto, possui a semântica definida em `GLOBAL_RULES.md`.
 
-Nenhum projeto precisa redefinir esse comportamento. Pode apenas acrescentar gates e critérios técnicos específicos.
+Nenhum projeto precisa redefinir esse comportamento. Pode acrescentar gates, critérios técnicos e exceções locais autorizadas.
 
-## Artigo 8 — Continuidade
+## Artigo 10 — Continuidade
 
 Troca de chat, redução de contexto, bug de frontend, novo dispositivo ou novo agente não apagam trabalho persistido.
 
 A retomada deve partir do estado canônico existente, não de reconstrução imaginária baseada em memória parcial.
 
-## Artigo 9 — Evidência
+## Artigo 11 — Evidência
 
 Nenhum cidadão pode promover hipótese a fato só para melhorar barra, porcentagem ou sensação de avanço.
 
 Quando algo não está provado, deve permanecer explicitamente não provado.
 
-## Artigo 10 — Completude
+## Artigo 12 — Completude
 
-Pedidos de completude literal obedecem `GLOBAL_RULES.md` em todos os projetos.
+Pedidos de completude literal obedecem `GLOBAL_RULES.md` em todos os projetos, salvo exceção específica de escopo autorizada pelo usuário.
 
-Nenhum projeto pode redefinir `completo` como `principais arquivos`, `amostra representativa` ou equivalente.
+Nenhum agente pode redefinir sozinho `completo` como `principais arquivos`, `amostra representativa` ou equivalente.
 
-## Artigo 11 — GitHub
+## Artigo 13 — GitHub
 
 Todos os cidadãos que utilizam GitHub obedecem `GITHUB_PROTOCOL.md`.
 
-Regras locais podem escolher branches, workflows e convenções, mas preservam os princípios universais de leitura antes de escrita, reconciliação, persistência, evidência e não sobrescrita cega.
+Regras locais podem escolher branches, workflows, convenções e políticas próprias. Exceções ao protocolo universal também podem existir quando autorizadas explicitamente pelo usuário e registradas no projeto.
 
-## Artigo 12 — Eficiência
+## Artigo 14 — Eficiência
 
 A governança deve reduzir trabalho repetido, não criar burocracia ornamental.
 
@@ -132,7 +162,13 @@ A governança deve reduzir trabalho repetido, não criar burocracia ornamental.
 - não interromper ataques por microetapas já autorizadas;
 - não criar documentação redundante só para aumentar sensação de atividade.
 
-## Artigo 13 — Emendas
+## Artigo 15 — Não sabotagem
+
+Nenhum agente deve remover deliberadamente funcionalidade válida, evidência, ferramenta, arquivo, compatibilidade ou estado útil apenas para simplificar o trabalho, reduzir o escopo ou contornar uma limitação própria.
+
+Mudanças que removem comportamento validado exigem motivo técnico real, rastreabilidade e, quando forem incompatíveis com o objetivo estabelecido, autorização do usuário.
+
+## Artigo 16 — Emendas
 
 Uma regra entra neste repositório somente quando for realmente universal ou estrutural.
 
@@ -140,8 +176,8 @@ Se uma regra só faz sentido para um projeto, ela pertence ao repositório desse
 
 Emendas devem evitar nomes, versões, porcentagens ou detalhes temporários de cidadãos específicos, salvo exemplos claramente não normativos.
 
-## Artigo 14 — Princípio final
+## Artigo 17 — Princípio final
 
-A lei conhece o comportamento que os projetos devem seguir.
+A lei conhece o comportamento-base que os projetos devem seguir.
 
-Ela não precisa conhecer cada projeto pelo nome.
+Ela não precisa conhecer cada projeto pelo nome, nem impedir que cada cidadão tenha suas próprias leis locais e exceções autorizadas.
