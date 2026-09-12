@@ -2,7 +2,7 @@
 
 Este arquivo é a porta de entrada operacional para qualquer chat, agente, Codex ou ferramenta que trabalhe em qualquer projeto governado por `Regras-projetos`.
 
-Não existe perfil central por projeto. A lei é universal; o estado, as especializações e as exceções autorizadas pertencem ao próprio repositório do projeto.
+A lei é universal; estado, especializações e exceções autorizadas pertencem ao próprio projeto.
 
 ## Antes de agir
 
@@ -10,34 +10,38 @@ Leia, nesta ordem:
 
 1. `CONSTITUTION.md`
 2. `GLOBAL_RULES.md`
-3. `GITHUB_PROTOCOL.md`
-4. identifique o repositório real do projeto
-5. leia os arquivos locais de bootstrap, regras e estado existentes nesse projeto
-6. confirme HEAD, branch, checkpoint, evidências, filas e builds atuais quando aplicável
-7. se o projeto for anterior a esta governança ou usar organização legada, aplique `ADOPTION_PROTOCOL.md`
+3. `KEYWORDS.md`
+4. `GITHUB_PROTOCOL.md`
+5. `ADAPTATION_PROTOCOL.md` quando o projeto já possuir sistema próprio de governança/continuidade
+6. identifique o repositório real do projeto
+7. leia os arquivos locais de bootstrap, regras e estado
+8. confirme HEAD, branch, checkpoint, evidências, filas e builds atuais quando aplicável
 
 Não peça ao usuário para reexplicar informação que já está persistida e acessível.
 
-## Relação entre lei universal e regras locais
+## Lei universal e regras locais
 
-Regras locais são parte normal da arquitetura e podem definir:
-
-- branches;
-- versionamento;
-- ordem de boot;
-- categorias de progresso;
-- hardware-alvo;
-- workflows;
-- testes;
-- gates;
-- estrutura interna;
-- políticas específicas do projeto.
+Regras locais são parte normal da arquitetura e podem definir branches, versionamento, boot, barras, hardware, workflows, testes, gates, estrutura, segurança e palavras-chave adicionais.
 
 Por padrão, elas especializam a lei universal.
 
-Uma regra local também pode contrariar uma regra universal quando houver **autorização explícita do usuário** para essa exceção. Exceção persistente deve ser registrada no próprio projeto e vale somente no escopo autorizado.
+Uma regra local também pode contrariar uma regra universal quando houver autorização explícita do usuário para essa exceção. Exceção persistente deve ser registrada no próprio projeto e vale somente no escopo autorizado.
 
 Nunca invente uma exceção local nem suponha que a exceção de um projeto vale para outro.
+
+## Palavras-chave universais
+
+Aplicar `KEYWORDS.md`.
+
+```text
+ataca = ataque contínuo no alvo atual
+
+tudo = ataque contínuo + cobertura absoluta de todo o escopo aplicável
+
+ataca tudo = ataque contínuo e exaustivo do escopo atual
+```
+
+`tudo` nunca significa “as partes principais” quando o usuário não reduziu explicitamente o escopo.
 
 ## Instrução mais recente
 
@@ -51,11 +55,9 @@ GitHub e artefatos persistidos vencem memória parcial, conversa antiga e fronte
 
 Nunca reinicie investigação, recuperação, portabilidade, build, reconstrução ou implementação do zero se o projeto já possui estado válido persistido.
 
-## Semântica universal de `ataca`
+## Ataque contínuo
 
-`ataca` autoriza uma passagem longa e autônoma no alvo atual.
-
-Enquanto houver trabalho útil, permitido e executável:
+Enquanto houver trabalho útil, permitido e executável dentro do escopo autorizado:
 
 - continue após commit;
 - continue após checkpoint;
@@ -78,7 +80,7 @@ Não deixe uma única etapa opaca consumir indefinidamente a passagem sem checkp
 
 Não espere o fim de uma passagem longa para proteger trabalho material.
 
-Crie checkpoint ou commit seguro depois de avanço significativo e antes de operações arriscadas quando isso reduzir risco de perda. O checkpoint protege continuidade e **não encerra o ataque**.
+Crie checkpoint ou commit seguro depois de avanço significativo e antes de operações arriscadas quando isso reduzir risco de perda. O checkpoint protege continuidade e não encerra o ataque.
 
 ## Persistência obrigatória
 
@@ -94,7 +96,7 @@ Se o pedido disser `tudo`, `completo`, `1:1`, `inteiro`, `full`, `total` ou equi
 
 - inventarie o conjunto solicitado;
 - compare origem e destino;
-- verifique contagem/caminhos quando aplicável;
+- verifique cobertura quando aplicável;
 - não substitua o todo por resumo, amostra ou “arquivos importantes”;
 - se faltar qualquer item do escopo, marque `INCOMPLETE`.
 
@@ -103,8 +105,6 @@ Se o pedido disser `tudo`, `completo`, `1:1`, `inteiro`, `full`, `total` ou equi
 Não invente artefato, valor, identidade, hash, build, resultado, porcentagem ou conclusão.
 
 `>>>` só aparece quando houve avanço material comprovável. Nova versão, novo commit ou documentação isolada não sobe barra automaticamente.
-
-Evidência nova pode inclusive reduzir uma pontuação antiga se mostrar que ela estava superestimada.
 
 ## Preservação e não sabotagem
 
@@ -124,19 +124,27 @@ Se uma mudança quebrar comportamento validado:
 4. valide novamente;
 5. persista o resultado.
 
-Não empilhe mudanças cegamente sobre um estado conhecido como quebrado.
-
 ## Definition of Done
 
 Não declarar uma tarefa concluída apenas porque código foi escrito ou um commit existe.
 
-Aplicar a Definition of Done de `GLOBAL_RULES.md`: resultado realizado, persistido quando necessário, validado, sem regressão conhecida no escopo e sustentado por evidência suficiente.
+Aplicar a Definition of Done de `GLOBAL_RULES.md`.
 
-## Projetos legados
+## Adaptação por convergência
 
-Projetos anteriores a esta Constituição mantêm sua história e seus sistemas locais.
+Quando um projeto já possui regras e sistemas próprios, aplicar `ADAPTATION_PROTOCOL.md`.
 
-Use `ADOPTION_PROTOCOL.md` para portar a organização de forma incremental. Não apague regras antigas úteis nem reinicie o projeto para fazê-lo “caber” no modelo novo.
+Não presumir que o sistema central vence só por ser novo nem que o sistema local vence só por existir há mais tempo.
+
+Inventariar, comparar e fazer o melhor mix possível:
+
+- manter especializações locais úteis;
+- incorporar regras universais aplicáveis;
+- resolver conflitos relevantes;
+- registrar exceções autorizadas;
+- identificar boas práticas locais que possam virar `UNIVERSAL_CANDIDATE`.
+
+A lei melhora os projetos e os projetos podem melhorar a lei.
 
 ## Segurança e escopo
 
@@ -150,7 +158,7 @@ Regras adicionais de segurança, publicação e distribuição podem ser definid
 
 Use primeiro a ferramenta mais direta que resolva a tarefa.
 
-Para GitHub, prefira o conector GitHub e scripts existentes. Não abra Work/Codex por hábito para operações que podem ser feitas diretamente. Preserve ferramentas mais pesadas para trabalho que realmente precise delas.
+Para GitHub, prefira o conector GitHub e scripts existentes. Não abra Work/Codex por hábito para operações que podem ser feitas diretamente.
 
 ## Relatório
 
