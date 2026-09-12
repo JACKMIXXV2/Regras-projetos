@@ -2,7 +2,7 @@
 
 Este arquivo define como qualquer projeto governado por `Regras-projetos` deve ler, alterar, validar e persistir estado no GitHub.
 
-Ele é universal. Branches, workflows, nomes de arquivos e políticas de release podem variar por projeto, mas o comportamento operacional abaixo continua válido.
+Ele é universal. Branches, workflows, nomes de arquivos e políticas de release podem variar por projeto. Exceções locais ao protocolo também podem existir quando autorizadas explicitamente pelo usuário e registradas no projeto.
 
 ## 1. Antes de escrever
 
@@ -12,7 +12,7 @@ Sempre que possível:
 2. confirmar a branch correta;
 3. ler HEAD e estado atual;
 4. buscar o arquivo atual e seu SHA quando a operação for update/delete;
-5. verificar regras locais, checkpoint e estado canônico do projeto;
+5. verificar regras locais, exceções autorizadas, checkpoint e estado canônico do projeto;
 6. só então escrever.
 
 Nunca sobrescrever um arquivo com base em cópia antiga do chat se o GitHub possui versão mais nova.
@@ -27,7 +27,7 @@ Regras universais:
 - não assumir que `main` contém laboratório, provenance ou estado experimental;
 - não mover ref à força para “resolver” divergência sem entender o que seria perdido;
 - se HEAD mudou durante o trabalho, reler e reconciliar antes de atualizar o mesmo caminho;
-- regras locais de branch são válidas desde que não contradigam este protocolo.
+- obedecer regras locais de branch e exceções explicitamente autorizadas para aquele projeto.
 
 ## 3. Commits
 
@@ -51,7 +51,23 @@ Se um ataque altera código, regra local, estado, evidência, ferramenta, teste 
 
 Um resultado que só existe no chat, `/tmp`, workspace efêmero ou memória do agente não conta como fechado.
 
-## 5. CI, build e runtime
+## 5. Checkpoints preventivos
+
+Ataques longos devem proteger progresso antes do final quando houver risco real de perda.
+
+Criar checkpoint ou commit seguro quando aplicável:
+
+- após avanço material significativo;
+- antes de operação destrutiva;
+- antes de grande refatoração;
+- antes de alteração estrutural de estado;
+- quando reconstruir o trabalho em caso de falha seria caro.
+
+Checkpoint não significa encerramento do ataque.
+
+O projeto pode definir localmente formato, branch e frequência mais específicos.
+
+## 6. CI, build e runtime
 
 Quando a mudança toca código compilável ou contrato testável:
 
@@ -63,14 +79,14 @@ Quando a mudança toca código compilável ou contrato testável:
 
 Se CI falhar por erro corrigível do projeto, corrigir e retestar dentro do mesmo ataque sempre que possível.
 
-## 6. Artefatos
+## 7. Artefatos
 
 - Não tratar artifact expirado de CI como perda do código-fonte.
 - Se o projeto permite reconstrução reproduzível, recompile pelo workflow ou build oficial.
 - Binário, JAR, APK, EXE, WAV, modelo ou outro artefato só conta como evidência quando realmente foi produzido ou obtido.
 - Não inventar hash nem afirmar conteúdo de binário não inspecionado.
 
-## 7. Bug -> correção -> nova validação
+## 8. Bug -> correção -> nova validação
 
 Quando o usuário reportar bug em artefato testável:
 
@@ -80,7 +96,7 @@ bug reportado
 -> diagnóstico
 -> correção
 -> teste/contrato quando possível
--> commit
+-> commit/checkpoint
 -> CI/build quando aplicável
 -> novo artefato identificável quando necessário
 -> novo teste
@@ -88,7 +104,21 @@ bug reportado
 
 Não reutilizar silenciosamente o mesmo número ou artefato se a política local exige nova versão.
 
-## 8. Conflitos e concorrência
+## 9. Regressão e rollback
+
+Se uma alteração quebrar estado ou comportamento previamente validado:
+
+1. preservar evidência da regressão;
+2. identificar o último commit/checkpoint conhecido como bom;
+3. avaliar correção direta versus rollback;
+4. evitar empilhar mudanças não relacionadas sobre o estado quebrado;
+5. restaurar ou corrigir;
+6. executar novamente a validação aplicável;
+7. registrar a causa e o resultado.
+
+Rollback não deve apagar a trilha que explica a regressão.
+
+## 10. Conflitos e concorrência
 
 Se outra mudança chegar primeiro:
 
@@ -100,7 +130,7 @@ Se outra mudança chegar primeiro:
 
 Em atualização sequencial do mesmo arquivo, usar o SHA retornado pela leitura ou update mais recente.
 
-## 9. Operações destrutivas
+## 11. Operações destrutivas
 
 Delete, force-update, reset, merge destrutivo ou substituição ampla exigem certeza sobre escopo e provenance.
 
@@ -108,9 +138,10 @@ Antes de apagar:
 
 - confirmar que o arquivo realmente foi substituído ou ficou obsoleto;
 - verificar se histórico ou compatibilidade exige preservação;
-- evitar remover baseline validado por conveniência.
+- evitar remover baseline validado por conveniência;
+- criar checkpoint preventivo quando a operação puder afetar estado difícil de reconstruir.
 
-## 10. Migração e espelho 1:1
+## 12. Migração e espelho 1:1
 
 Quando o pedido for `migração completa`, `espelho 1:1`, `workspace inteiro` ou equivalente:
 
@@ -120,19 +151,27 @@ Quando o pedido for `migração completa`, `espelho 1:1`, `workspace inteiro` ou
 - verificar o que ficou de fora;
 - nunca declarar `COMPLETE` se houver item requerido ausente.
 
-## 11. Relação com a lei universal
+Quando a migração for especificamente para a nova governança universal, obedecer também `ADOPTION_PROTOCOL.md`.
 
-Mudanças específicas de um projeto pertencem ao próprio projeto.
+## 13. Regras locais e exceções de Git
 
-Mudanças universais de governança pertencem a `Regras-projetos`.
+Um projeto pode ter regras próprias de branch, release, versionamento, CI, commit, artifact ou fluxo de validação.
 
-Um projeto pode ter regras Git próprias de branch, release, versionamento ou CI, mas elas funcionam como especializações deste protocolo, nunca como revogação.
+Por padrão, elas especializam este protocolo.
 
-Estado volátil como versão, porcentagem, fila, checkpoint, build e próximo alvo permanece no projeto.
+Se o usuário autorizar explicitamente uma exceção que contradiga uma regra universal deste arquivo, a exceção pode prevalecer naquele projeto e naquele escopo.
 
-## 12. Fonte de verdade quando a interface falha
+Exceções duradouras devem ser registradas localmente e não devem ser promovidas automaticamente a regra de outros projetos.
 
-Ordem de confiança:
+## 14. Definition of Done no GitHub
+
+A presença de commit não prova, sozinha, conclusão.
+
+Quando a tarefa exige validação, um estado só deve ser tratado como concluído depois de cumprir a Definition of Done de `GLOBAL_RULES.md`, incluindo persistência, validação aplicável, evidência e ausência de regressão conhecida no escopo verificado.
+
+## 15. Fonte de verdade quando a interface falha
+
+Ordem de confiança padrão:
 
 ```text
 GitHub HEAD / objetos persistidos
@@ -141,5 +180,7 @@ GitHub HEAD / objetos persistidos
 > histórico de conversa
 > spinner / frontend
 ```
+
+Uma regra local ou exceção autorizada pode refinar fontes adicionais, mas a interface visual isolada não deve fazer o projeto voltar para trás.
 
 Se a interface parecer parada mas o commit existe, o commit existe. Pixels ansiosos não anulam SHA.
