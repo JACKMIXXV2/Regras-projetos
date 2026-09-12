@@ -123,12 +123,12 @@ As palavras-chave universais são definidas em `KEYWORDS.md`.
 Duas possuem significado obrigatório em todos os projetos:
 
 ```text
-ataca = ataque contínuo para avançar materialmente no alvo atual
+ataca = ataque contínuo + absoluto + exaustivo de todo o escopo aplicável
 
-tudo = ataque contínuo + cobertura absoluta de todo o escopo aplicável
-
-ataca tudo = ataque contínuo e exaustivo do escopo atual
+tudo = ataque contínuo quando usado operacionalmente + quantificador absoluto do conjunto indicado
 ```
+
+`ataca` sozinho já exige esgotar integralmente o alvo atual que puder ser executado. Não existe uma palavra-chave superior chamada `ataca tudo` e nenhum agente pode interpretar `ataca` como uma versão parcial que precisaria de `tudo` para se tornar completa.
 
 `tudo` também funciona como quantificador literal: não significa “principais partes”, “o importante” ou “amostra representativa”.
 
@@ -150,7 +150,7 @@ Quando algo não está provado, deve permanecer explicitamente não provado.
 
 Pedidos de completude literal obedecem `GLOBAL_RULES.md` e `KEYWORDS.md` em todos os projetos, salvo redução explícita de escopo autorizada pelo usuário.
 
-Nenhum agente pode redefinir sozinho `tudo`, `completo`, `1:1`, `full`, `total` ou equivalente como “principais arquivos”, “amostra representativa” ou subset conveniente.
+Nenhum agente pode redefinir sozinho `ataca`, `tudo`, `completo`, `1:1`, `full`, `total` ou equivalente como “principais arquivos”, “amostra representativa” ou subset conveniente.
 
 ## Artigo 13 — GitHub
 
