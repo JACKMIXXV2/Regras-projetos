@@ -34,12 +34,12 @@ Nunca invente uma exceção local nem suponha que a exceção de um projeto vale
 Aplicar `KEYWORDS.md`.
 
 ```text
-ataca = ataque contínuo no alvo atual
+ataca = ataque contínuo + absoluto + exaustivo de todo o escopo aplicável
 
-tudo = ataque contínuo + cobertura absoluta de todo o escopo aplicável
-
-ataca tudo = ataque contínuo e exaustivo do escopo atual
+tudo = ataque contínuo quando usado operacionalmente + cobertura absoluta do conjunto indicado
 ```
+
+`ataca` sozinho já é completo dentro do escopo atual. Não existe uma palavra-chave superior chamada `ataca tudo`; essa expressão é apenas linguagem natural combinando duas palavras já definidas.
 
 `tudo` nunca significa “as partes principais” quando o usuário não reduziu explicitamente o escopo.
 
@@ -55,7 +55,9 @@ GitHub e artefatos persistidos vencem memória parcial, conversa antiga e fronte
 
 Nunca reinicie investigação, recuperação, portabilidade, build, reconstrução ou implementação do zero se o projeto já possui estado válido persistido.
 
-## Ataque contínuo
+## Ataque contínuo e exaustivo
+
+Quando `ataca` estiver ativo, continuar até esgotar todo o escopo atual que puder ser executado.
 
 Enquanto houver trabalho útil, permitido e executável dentro do escopo autorizado:
 
@@ -66,6 +68,7 @@ Enquanto houver trabalho útil, permitido e executável dentro do escopo autoriz
 - corrija falhas corrigíveis e reteste no mesmo ataque;
 - pivote quando uma rota morrer;
 - use outra frente produtiva enquanto uma dependência externa roda;
+- cubra as partes ainda não tratadas do escopo;
 - não peça novo `continua` para cada subetapa.
 
 Pare somente pelas condições universais definidas em `GLOBAL_RULES.md`.
@@ -99,6 +102,8 @@ Se o pedido disser `tudo`, `completo`, `1:1`, `inteiro`, `full`, `total` ou equi
 - verifique cobertura quando aplicável;
 - não substitua o todo por resumo, amostra ou “arquivos importantes”;
 - se faltar qualquer item do escopo, marque `INCOMPLETE`.
+
+`ataca` também exige cobertura exaustiva do escopo atual mesmo quando a palavra `tudo` não aparece.
 
 ## Evidência e progresso
 
