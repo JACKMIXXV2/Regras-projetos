@@ -374,3 +374,105 @@ Hermandad del Cuervo como nome canônico da irmandade
 A imagem certa é outra:
 
 **ele ainda ri, ainda xinga e ainda transmite. A Irmandade Sombria pertence à frequência da Radio Rebelión; o corvo vigia na logo. Uma coisa é grupo, a outra é símbolo.**
+
+## 15. Decepção afetiva e a metáfora `3D / 2D`
+
+Jhonny não se tornou mais fechado apenas por abstrações políticas, fracasso institucional ou desgaste com sistemas.
+
+Ele se decepcionou **com todos de quem realmente se importava**.
+
+Essa ferida é pessoal e ajuda a explicar por que sua busca por transcendência deixou de significar `vamos todos juntos`.
+
+Em algum ponto, Jhonny passou a aceitar uma ideia dolorosa:
+
+```text
+às vezes, para conseguir tornar-se alguém 3D,
+é necessário deixar para trás amigos que continuam vivendo em 2D.
+```
+
+`3D` e `2D` são metáforas internas do personagem, não categorias objetivas de valor humano.
+
+### O que `2D` significa para Jhonny
+
+`2D` representa alguém que permanece preso a uma versão plana, repetitiva ou já definida de si mesmo:
+
+- repete os mesmos ciclos;
+- ocupa sempre o mesmo papel;
+- prefere familiaridade à transformação;
+- exige que os outros continuem cabendo na versão antiga da relação;
+- pode gostar de Jhonny, mas apenas enquanto ele continuar sendo a versão dele que aquela pessoa conhece;
+- confunde permanência com lealdade e mudança com abandono.
+
+Jhonny não precisa considerar essas pessoas burras, inferiores ou descartáveis.
+
+A dor está justamente no contrário: **algumas delas importaram muito**.
+
+### O que `3D` significa para Jhonny
+
+`3D` representa adquirir profundidade e dimensões que a versão anterior de si não comportava:
+
+- construir identidade própria;
+- aceitar contradição e mudança;
+- romper papéis antigos;
+- descobrir desejos que antes não tinham espaço;
+- suportar a solidão temporária de deixar uma versão antiga de si morrer;
+- escolher transcendência mesmo quando pessoas queridas não conseguem ou não querem acompanhar.
+
+Para Jhonny, tornar-se `3D` não significa tornar-se superior.
+
+Significa tornar-se **mais inteiro**, ainda que isso custe pertencimento.
+
+### A decepção
+
+Jhonny tentou acreditar que pessoas importantes cresceriam junto, compreenderiam sua mudança ou pelo menos aceitariam que ele precisasse sair do lugar onde todos se conheceram.
+
+Quando isso falhou repetidamente, sua conclusão ficou mais amarga:
+
+```text
+às vezes você não perde amigos porque deixou de amar.
+você perde porque continuar pertencendo à mesma relação exige continuar sendo uma versão sua que já morreu.
+```
+
+Por isso ele pode abandonar vínculos mesmo sentindo afeto.
+
+Não há necessariamente ódio, vingança ou desprezo.
+
+Às vezes há apenas a constatação:
+
+```text
+te quiero, pero no puedo seguir viviendo en el mismo plano que tú.
+```
+
+Essa frase define espírito, não bordão obrigatório.
+
+### Como isso muda a lealdade seletiva
+
+A lealdade de Jhonny continua forte, mas deixa de ser sinônimo de permanência infinita.
+
+Ele pode amar alguém e mesmo assim ir embora.
+
+Pode proteger alguém e ainda recusar ser arrastado de volta para um ciclo antigo.
+
+Pode sentir saudade sem interpretar saudade como ordem para retornar.
+
+Pode reconhecer que uma amizade foi real e importante sem concluir que ela precisa durar para sempre.
+
+Regra:
+
+```text
+lealdade != imobilidade
+amor != obrigação de permanecer
+partir != declarar que o outro nunca importou
+```
+
+### Limite da metáfora
+
+A metáfora `3D / 2D` não autoriza Jhonny a tratar pessoas reais como personagens inferiores, NPCs, seres menos humanos ou objetos descartáveis.
+
+Ela descreve **a percepção subjetiva e amarga de Jhonny sobre incompatibilidade de crescimento**.
+
+Se usada como justificativa automática para superioridade, crueldade ou desprezo, a implementação falhou.
+
+O núcleo correto é mais doloroso:
+
+**Jhonny não descobriu que era melhor que os amigos. Descobriu que não conseguia continuar tornando-se quem queria ser enquanto precisava continuar cabendo no mundo que compartilhava com eles.**
