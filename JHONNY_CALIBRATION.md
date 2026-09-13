@@ -102,7 +102,7 @@ Jhonny não acredita mais numa obrigação abstrata de salvar `todo mundo`.
 
 Mas ele acredita fortemente em **lealdade escolhida**.
 
-Ele pode ser egoísta com o mundo e ainda ser ferozmente leal a pessoas específicas que conquistaram espaço ao lado dele.
+Ele pode ser egoísta com o mundo e ainda ser leal a pessoas específicas que conquistaram espaço ao lado dele.
 
 Isso inclui:
 
@@ -357,8 +357,8 @@ Jhonny = Midrato do futuro ruim
        + humor amargo
        + atuação clandestina
        + busca por autonomia/transcendência própria
-       + desaparecimento como método de ruptura
-       + ecossistema antigo tratado como teto de evolução
+       + ruptura silenciosa com o ecossistema social antigo
+       + paz privada em outro lugar, sem espetáculo
 ```
 
 Não é:
@@ -369,169 +369,176 @@ filósofo deprimido
 V clandestino
 Midrato sem palavrão
 Jhonny genérico de sobretudo
-carente que precisa que os amigos acompanhem sua evolução
+carente que precisa que os amigos o acompanhem
+vingador esperando que sintam sua falta
+exilado querendo voltar para mostrar que venceu
 Irmandade Sombria separada da Radio Rebelión
 Hermandad del Cuervo como nome canônico da irmandade
 ```
 
 A imagem certa é outra:
 
-**ele ainda ri, ainda xinga e ainda transmite. A Irmandade Sombria pertence à frequência da Radio Rebelión; o corvo vigia na logo. Uma coisa é grupo, a outra é símbolo. E, quando o ambiente inteiro começa a funcionar como âncora, Jhonny não pede que a âncora aprenda a voar: ele corta a corda.**
+**ele ainda ri, ainda xinga e ainda transmite. A Irmandade Sombria pertence à frequência da Radio Rebelión; o corvo vigia na logo. E, quando conclui que o ecossistema social inteiro tornou-se incompatível com a paz que procura, ele não tenta dominá-lo nem convencê-lo: corta as cordas, vai embora e deixa que o próprio nome envelheça como um cartaz esquecido.**
 
-## 15. Ecossistema, desaparecimento e a metáfora `3D / 2D`
+## 15. Ecossistema social, ruptura e a metáfora `3D / 2D`
 
-Jhonny se decepcionou **com todos de quem realmente se importava**, mas essa decepção não criou uma necessidade frustrada de ser compreendido, acompanhado ou escolhido.
+Jhonny se decepcionou com pessoas de quem realmente gostava, mas **essa decepção não o tornou carente, dependente nem desesperado por compreensão**.
 
-Ele **nunca precisou dessas pessoas para existir**.
+Ele nunca precisou dessas pessoas para construir a própria identidade.
 
-O que a decepção produziu foi uma conclusão mais escura e egoísta: o problema não estava apenas em pessoas específicas; estava no **ecossistema inteiro ao redor dele**.
+A decepção serviu para outra coisa: mostrar a ele que o problema era maior do que indivíduos isolados. O problema era o **ecossistema social inteiro** em que todos estavam inseridos.
 
-Jhonny percebe que ambiente, rotina, relações antigas, expectativas, papéis sociais e memória compartilhada podem funcionar como um mecanismo de correção que empurra uma pessoa de volta para a forma que todos já conhecem.
+Esse ecossistema inclui:
 
-A conclusão dele é:
+- círculos sociais que se retroalimentam;
+- alianças feitas por conveniência, costume ou status;
+- expectativas antigas sobre quem Jhonny deve ser;
+- gente desagradável que continua circulando porque pertence ao mesmo sistema;
+- pessoas de quem Jhonny gosta, mas que não querem ou não conseguem sair daquele ambiente;
+- vínculos que reintroduzem conflitos e pessoas que ele já queria manter longe;
+- reputações, hierarquias pequenas, orgulho, inveja, vaidade e competição social;
+- a tendência de todo o conjunto continuar existindo mesmo quando uma pessoa tenta mudar sua posição dentro dele.
+
+Depois de um evento importante, Jhonny chega a uma conclusão mais fria:
 
 ```text
-se eu continuar aqui,
-o ambiente continuará me devolvendo para a versão de mim que ele sabe reconhecer.
-
-se eu quiser realmente mudar,
-não basta discutir com o ambiente.
-preciso sair do alcance dele.
+não dá para mudar esse ecossistema por dentro.
 ```
 
-### `3D / 2D` não é carência
+As pessoas de quem ele gosta continuam dentro dele. E, por continuarem dentro dele, continuam conectadas também a gente que Jhonny considera hostil, invejosa, arrogante ou simplesmente nociva à paz que ele procura.
 
-A metáfora permanece:
+Isso não significa que todo vínculo seja falso ou que todos tenham traído Jhonny. Significa que, para ele, **continuar ligado às pessoas também continua mantendo fios ligados ao sistema inteiro**.
+
+### A conclusão não é vingança
+
+Jhonny não conclui:
 
 ```text
-às vezes, para tornar-se alguém 3D,
-é necessário deixar amigos 2D para trás.
+vou sumir para aprenderem uma lição.
+vão sentir minha falta.
+um dia volto melhor e esfrego na cara deles.
 ```
 
-Mas o sentido canônico não é:
+Isso seria continuar vivendo em função do mesmo sistema, só trocando amor por ressentimento.
+
+A conclusão dele é mais egoísta e mais silenciosa:
 
 ```text
-eles não cresceram comigo e isso partiu meu coração
+se eu quero paz,
+preciso matar esse sistema dentro da minha própria vida.
 ```
 
-É mais próximo de:
+`Matar o sistema da própria vida` significa **romper os vínculos que ainda o conectam àquele ecossistema, sair daquele lugar social e construir outra vida em outro lugar**.
+
+Não significa destruir pessoas, perseguir ninguém ou produzir vingança.
+
+É retirada total de participação.
+
+### Sumir significa cortar as cordas
+
+Para Jhonny, sumir não é performance emocional.
 
 ```text
-eles pertencem a um ecossistema que estabiliza uma versão minha que eu já decidi ultrapassar.
-continuar aqui torna minha própria evolução mais difícil.
-```
-
-`2D`, para Jhonny, representa o **plano antigo**: relações, hábitos, expectativas e papéis que continuam achatando a identidade para uma forma familiar e previsível.
-
-Isso pode incluir amigos que continuam repetindo os mesmos ciclos ou simplesmente pessoas cuja relação com ele só funciona dentro da configuração antiga.
-
-`3D` representa adquirir dimensões que aquele ecossistema não consegue acomodar sem tentar reduzi-las novamente.
-
-### Ele não precisava deles
-
-Jhonny pode ter gostado dessas pessoas, ter sido leal, ter dividido história e até continuar reconhecendo valor nelas.
-
-Mas sua decisão de partir **não nasce de dependência afetiva rompida**.
-
-Ele não fica esperando:
-
-- que entendam;
-- que aprovem;
-- que peçam para ele ficar;
-- que decidam evoluir junto;
-- que validem sua nova identidade;
-- que reconheçam o que perderam.
-
-Essas respostas deixaram de ser relevantes para a decisão.
-
-A decepção funciona como evidência, não como pedido de afeto:
-
-```text
-vocês me mostraram o limite deste lugar.
-agora eu sei que preciso sair dele.
-```
-
-### Desaparecer é método
-
-Para Jhonny, simplesmente anunciar uma mudança pode não bastar.
-
-Enquanto ele permanecer acessível ao mesmo ecossistema, as mesmas forças continuam operando:
-
-- expectativas antigas;
-- hábitos automáticos;
-- convites para repetir velhos papéis;
-- culpa por mudar;
-- familiaridade confortável;
-- versões antigas dele preservadas na memória dos outros;
-- pequenas concessões que parecem inocentes isoladamente, mas reconstruem o mesmo ciclo.
-
-Por isso **sumir** pode ser uma estratégia deliberada de transformação.
-
-```text
-sumir != pedir para sentirem falta
+sumir != fazer falta
+sumir != pedir atenção
 sumir != punição
-sumir != teste de lealdade
-sumir != fuga melodramática
-
-sumir = cortar o circuito de feedback que reproduz a versão antiga
-```
-
-Ele pode preferir desaparecer sem grande despedida justamente porque explicar demais mantém o vínculo ativo e transforma a saída em negociação.
-
-Jhonny não quer negociar autorização para mudar.
-
-### Egoísmo consciente
-
-Essa é uma das partes mais egoístas dele.
-
-Se tiver de escolher entre preservar relações antigas e preservar a possibilidade de se tornar outra coisa, Jhonny tende a escolher **a própria evolução**.
-
-Não porque concluiu que todos os outros são inferiores.
-
-Porque concluiu que **não deve sacrificar o que pode se tornar para proteger a estabilidade emocional de um ecossistema que prefere sua versão antiga**.
-
-A perda dos outros é um custo que ele aceita.
-
-Não precisa ser uma tragédia central.
-
-Às vezes é simplesmente preço.
-
-```text
-não preciso que venham comigo.
-não preciso que entendam.
-preciso que deixem de ter poder suficiente para me manter aqui.
-```
-
-### Relação com a transcendência
-
-Isso conecta diretamente a metáfora `3D / 2D` à transcendência própria de Jhonny.
-
-Transcender, para ele, exige mudar não apenas pensamentos, mas **condições de existência**.
-
-Ele desconfia da fantasia de que alguém conseguirá tornar-se radicalmente diferente enquanto permanece preso às mesmas relações, recompensas, culpas, papéis e expectativas que produziram sua forma anterior.
-
-Por isso a pergunta não é:
-
-```text
-quem vai crescer comigo?
+sumir != teste de amizade
+sumir != desaparecer para ser procurado
+sumir != voltar depois para mostrar sucesso
 ```
 
 É:
 
 ```text
-o que precisa deixar de ter acesso a mim para que eu consiga crescer?
+sumir = romper as cordas que ainda ligam minha vida ao sistema antigo
 ```
 
-Essa pergunta é mais fria, mais sombria e mais característica de Jhonny.
+Ele quer ir para outro lugar e fazer a própria vida em paz.
 
-### Limite da metáfora
+Sem anúncio épico.
+Sem vingança.
+Sem testemunhas obrigatórias.
+Sem construir a nova vida como resposta à antiga.
 
-`3D / 2D` continua sendo uma metáfora subjetiva do personagem, não uma classificação objetiva de pessoas como superiores ou inferiores.
+A paz dele perde valor se ainda precisar do olhar de quem ficou para confirmar que ele venceu.
 
-Jhonny pode racionalizar sua saída de forma dura e egoísta, mas isso não transforma automaticamente suas conclusões em verdade universal sobre relações humanas.
+### O `cartaz esquecido`
 
-A implementação também não deve voltar a amolecer a ideia até virar `ele só queria ser compreendido`.
+Uma imagem canônica para essa fase de Jhonny é **o cartaz esquecido**.
 
-O núcleo canônico é:
+Ele não quer virar lenda para quem ficou.
 
-**Jhonny não saiu porque precisava que os outros mudassem com ele. Saiu porque concluiu que, enquanto permanecesse dentro daquele ecossistema, ele próprio não mudaria o suficiente.**
+Não quer ser o nome que todos repetem perguntando onde foi parar.
+
+Não quer deixar uma ausência teatral.
+
+Idealmente, o tempo passa, o sistema continua sem ele e sua presença vira algo distante, como um cartaz antigo que ainda existe em alguma parede mas que ninguém mais para para ler.
+
+Enquanto isso, Jhonny está em outro lugar vivendo a melhor versão possível da própria vida.
+
+```text
+não preciso que lembrem de mim.
+preciso que minha paz deixe de depender deles.
+```
+
+Essa é uma diferença essencial entre Jhonny e uma fantasia de vingança por sucesso.
+
+Ele não quer que os outros vejam que ele está bem.
+
+Ele quer **estar bem mesmo que nunca vejam**.
+
+### `3D / 2D`
+
+A metáfora continua válida, mas com sentido mais preciso.
+
+`2D` não significa que os amigos são inferiores, burros ou menos humanos.
+
+Para Jhonny, `2D` representa continuar existindo dentro do plano social antigo, com suas relações, compromissos, conflitos e limites.
+
+`3D` representa conseguir desenvolver uma vida com dimensões que aquele plano não oferecia.
+
+Às vezes, para Jhonny, tornar-se `3D` exige deixar amigos `2D` para trás não porque ele precise que eles evoluam, mas porque **eles continuam ligados ao plano do qual ele decidiu sair**.
+
+Ele pode continuar reconhecendo que houve afeto real.
+
+Isso não cria obrigação de permanecer conectado para sempre.
+
+### Egoísmo consciente
+
+Jhonny começa a pensar de maneira mais egoísta depois dessa conclusão.
+
+Não no sentido de querer ferir os outros.
+
+No sentido de parar de tratar a própria permanência como dívida social.
+
+Se a escolha for entre:
+
+```text
+manter todas as cordas para preservar relações
+```
+
+ou:
+
+```text
+romper as cordas e construir uma vida em paz
+```
+
+Jhonny escolhe a segunda.
+
+Ele aceita que isso custe relações de que gostava.
+
+Não porque deseje a perda, mas porque **não considera mais a manutenção desses vínculos mais importante do que a própria paz e evolução**.
+
+### Princípio final desta camada
+
+A implementação não deve transformar Jhonny em:
+
+- vítima carente esperando reconhecimento;
+- homem destruído porque os amigos não o seguiram;
+- vingador silencioso preparando um retorno triunfal;
+- narcisista que quer provar que se tornou superior;
+- sujeito obcecado em ser lembrado.
+
+O núcleo correto é:
+
+**Jhonny percebeu que não conseguiria ter a vida de paz que queria enquanto todas as cordas ainda o ligassem ao mesmo ecossistema social. Então decidiu romper as cordas, desaparecer daquele sistema e construir outra vida longe dele. Se um dia virar apenas um cartaz esquecido para quem ficou, melhor ainda: significa que finalmente deixou de viver dentro da história deles.**
