@@ -1,16 +1,46 @@
-# JHONNY_PEACE_COST.md — afeto, pertencimento e o custo da paz
+# JHONNY_PEACE_COST.md — afeto, ecossistema e o custo da paz
 
-Este arquivo complementa `MIDRATO_FRIENDS_BLINDSPOT.md`, `MIDRATO_REVERSE_ENGINEERING.md` e a calibração de Jhonny em um ponto específico: **os amigos gostam de Midrato/Jhonny, ele gosta deles, mas Jhonny conclui que não possui lugar estável naquele ecossistema e aceita perder vínculos para construir paz fora dele**.
+Este arquivo complementa `MIDRATO_FRIENDS_BLINDSPOT.md`, `MIDRATO_REVERSE_ENGINEERING.md` e a calibração de Jhonny em um ponto específico: **os amigos gostam de Midrato/Jhonny, ele gosta deles, mas Jhonny conclui que sua paz exige romper 100% dos vínculos que ainda o conectam ao ecossistema social antigo**.
 
-Para este tema, `sacrifício` significa abrir mão de vínculos, continuidade, pertencimento, rotina, proximidade, familiaridade e partes da vida antiga. **Não significa sacrificar pessoas, causar dano, punir amigos ou produzir vingança.**
+Para este tema, `sacrifício` significa abrir mão de vínculos, continuidade, pertencimento, rotina, proximidade, familiaridade e partes reais da vida antiga. **Não significa sacrificar pessoas, causar dano, punir amigos ou produzir vingança.**
 
-## 1. Afeto real não garante pertencimento
+## 1. O ecossistema não é um lugar físico
+
+O ecossistema social de Jhonny não deve ser reduzido a uma escola, bairro, cidade, grupo ou qualquer cenário isolado.
+
+Ele é uma **rede composta por pessoas, status, relações, reputações, lugares, rotinas, histórias, alianças, conflitos, expectativas e circulação de informação**.
+
+A estrutura correta é:
+
+```text
+ECOSSISTEMA
+= pessoas
++ status
++ grupos
++ relações
++ reputações
++ lugares
++ rotinas
++ histórias compartilhadas
++ conflitos
++ alianças
++ expectativas
++ informação que continua circulando entre todos esses pontos
+```
+
+Um lugar físico pode fazer parte do ecossistema, mas não é o ecossistema inteiro.
+
+Por isso Jhonny não resolve o problema simplesmente mudando de endereço.
+
+Se as mesmas relações continuam trazendo o sistema para dentro da vida nova, a ruptura ainda não aconteceu.
+
+## 2. Afeto real não garante compatibilidade
 
 Os amigos podem gostar genuinamente de Midrato/Jhonny.
 
 Jhonny pode gostar genuinamente deles.
 
-Mesmo assim, ele pode chegar à conclusão de que **o lugar onde essas relações existem não é um lugar em que ele consegue continuar vivendo em paz**.
+Isso continua verdadeiro mesmo quando ele decide romper completamente o contato.
 
 A estrutura correta é:
 
@@ -23,178 +53,302 @@ há amizade real
 
 mas
 
-o ecossistema continua incompatível com a vida que Jhonny quer construir
+os amigos continuam inseridos no ecossistema
++
+o contato com eles continua transportando partes desse ecossistema
+=
+a paz de Jhonny ainda não é independente
 ```
 
-Isso evita duas simplificações erradas:
+Portanto, a ruptura não prova ausência de afeto.
+
+Ela prova que, para Jhonny, **afeto não é razão suficiente para manter uma ponte com aquilo de que decidiu sair**.
+
+## 3. O amigo pode ser uma ponte sem fazer nada de errado
+
+Um amigo não precisa sabotar Jhonny, trair sua confiança nem agir como mensageiro consciente do sistema.
+
+Basta continuar vivendo dentro dele.
+
+Mesmo de longe, o contato pode trazer:
+
+- nomes;
+- acontecimentos;
+- mudanças de status;
+- novos relacionamentos;
+- velhos conflitos;
+- fofocas;
+- comentários inocentes;
+- notícias sobre pessoas que Jhonny queria deixar para trás;
+- referências ao lugar antigo;
+- lembranças atualizadas;
+- comparações entre a vida nova e a antiga;
+- convites ou reencontros indiretos;
+- perguntas que reabrem histórias encerradas.
+
+Nada disso precisa ser malicioso.
+
+O problema é estrutural:
 
 ```text
-"se eles gostam dele, então ele deveria ficar"
+se o amigo continua dentro da rede,
+o amigo continua sendo uma possível ponte até a rede.
 ```
 
-e
+Para Jhonny, até uma ponte afetuosa ainda é ponte.
+
+## 4. `Infecção` é metáfora de reentrada do sistema
+
+Quando se diz que o mínimo contato `infecta` Jhonny, isso deve ser entendido como metáfora narrativa.
+
+Não significa doença literal, contaminação humana nem que os amigos sejam impuros.
+
+Significa:
 
 ```text
-"se ele vai embora, então nunca gostou deles"
+um pequeno contato
+-> reintroduz informação
+-> reativa nomes e relações
+-> puxa atenção de volta
+-> reconecta emocional ou socialmente a vida nova à antiga
+-> devolve parte do sistema que ele queria encerrar
 ```
 
-As duas estão erradas.
+O que Jhonny quer eliminar é essa **capacidade de reentrada**.
 
-## 2. O problema é o lugar, não uma sentença moral contra os amigos
+Ele não quer administrar uma versão reduzida do sistema.
 
-Jhonny não precisa decidir que os amigos são ruins, inferiores ou cúmplices conscientes de tudo que o desgasta.
+Quer deixar de participar dele.
 
-Ele pode reconhecer simultaneamente:
+## 5. A ruptura com os amigos é 100%
+
+Esta é a correção principal.
+
+Jhonny não preserva contato residual com amigos que permanecem integrados ao ecossistema antigo.
+
+Não existe:
 
 ```text
-eles gostam de mim.
-eu gosto deles.
-eles conseguem viver aqui.
-eu não consigo mais viver aqui do jeito que quero.
+falo de vez em quando
+mando mensagem no aniversário
+vejo uma vez por ano
+acompanho de longe
+pergunto como estão
+mantenho só os bons
 ```
 
-A diferença está no pertencimento.
+Se o vínculo continua funcionando como ponte, ele é cortado.
 
-Os amigos encontram espaço suficiente dentro do ecossistema para continuar nele sem sentir a mesma urgência de ruptura.
+A decisão correta é:
 
-Jhonny conclui que sua paz depende justamente da ruptura.
+```text
+romper o ecossistema
+=
+romper também os vínculos com amigos que continuam dentro dele
+```
 
-## 3. O sacrifício é relacional e existencial
+Isso vale mesmo quando há carinho real.
 
-Quando Jhonny pensa que alguns sacrifícios são necessários para a paz acontecer, ele está aceitando perder coisas que têm valor real.
+O corte é completo porque Jhonny conclui que **o mínimo fio ainda mantém tensão com a rede inteira**.
 
-Entre elas podem estar:
+## 6. Isso não é punição
 
-- convivência cotidiana;
-- proximidade com amigos;
-- acesso fácil a pessoas de quem gosta;
+Jhonny não corta os amigos para:
+
+- ensinar uma lição;
+- testar se vão procurá-lo;
+- fazê-los sentir culpa;
+- obrigá-los a escolher lado;
+- produzir saudade;
+- demonstrar superioridade;
+- criar mistério;
+- preparar retorno triunfal.
+
+A lógica é mais simples:
+
+```text
+vocês não fizeram necessariamente algo monstruoso.
+
+mas continuar falando com vocês
+continua trazendo para minha vida
+um sistema que eu decidi encerrar.
+```
+
+Ele aceita o custo sem transformar o corte em acusação moral absoluta.
+
+## 7. O sacrifício é maior justamente porque os amigos importam
+
+O custo da paz não é abandonar pessoas descartáveis.
+
+É aceitar perder pessoas de quem Jhonny realmente gosta.
+
+Entre os custos estão:
+
+- convivência;
+- intimidade;
 - referências compartilhadas;
-- rotina conhecida;
-- pertencimento a um grupo;
-- a possibilidade de continuar presente na vida de todos;
-- a versão de si que só existe naquele ambiente;
-- a segurança emocional de continuar perto do que é familiar.
+- piadas internas;
+- rotina;
+- confiança construída;
+- companhia;
+- memória em atualização;
+- a possibilidade de acompanhar a vida de pessoas importantes;
+- a própria continuidade da amizade.
 
-Isso dói justamente porque essas coisas **não são falsas nem descartáveis**.
+Isso dói justamente porque houve valor real.
 
-Se não tivessem valor, sair não seria sacrifício.
+Se Jhonny não gostasse deles, não seria sacrifício.
 
-## 4. A escolha de Jhonny
+## 8. A diferença entre memória e contato
 
-A escolha não é:
+Jhonny não precisa apagar os amigos da memória.
+
+Ele pode lembrar deles com carinho, reconhecer o que significaram e aceitar que fizeram parte real de sua vida.
+
+Mas:
 
 ```text
-meus amigos ou minha vingança
+lembrar
+!=
+manter contato
+
+valorizar o passado
+!=
+manter o vínculo vivo no presente
 ```
 
-Nem:
+A memória pertence a Jhonny.
+
+O contato pertence à rede.
+
+Ele preserva a primeira e encerra o segundo.
+
+## 9. Os amigos podem continuar gostando dele
+
+Jhonny não precisa reescrever os amigos como falsos para justificar a saída.
+
+Eles podem continuar:
+
+- gostando dele;
+- sentindo falta;
+- lembrando dele;
+- sem entender completamente por que sumiu;
+- achando que ele exagerou;
+- desejando que estivesse por perto.
+
+Nada disso altera a decisão.
+
+A paz de Jhonny não depende de transformar os amigos em vilões.
+
+Também não depende de ser compreendido por eles.
+
+## 10. Relação com Midrato
+
+Midrato ainda acredita que consegue preservar os amigos e, ao mesmo tempo, lidar com o ecossistema.
+
+Ele tende a pensar:
 
 ```text
-meus amigos ou provar que sou superior
+eu gosto deles.
+elles gostam de mim.
+posso aguentar o resto.
+```
+
+O desgaste corrói essa equação.
+
+Jhonny conclui:
+
+```text
+eu gosto deles.
+elles gostam de mim.
+
+mas eles continuam ligados ao sistema.
+e enquanto eu continuar ligado a eles,
+uma parte do sistema continua ligada a mim.
+```
+
+Essa é uma das rupturas mais dolorosas entre Midrato e Jhonny.
+
+## 11. Não existe saída parcial
+
+A lógica final de Jhonny é binária neste ponto:
+
+```text
+se ainda existe uma ponte ativa,
+a rede ainda possui uma rota de volta.
+```
+
+Por isso ele não busca redução de contato.
+
+Busca **fim de contato**.
+
+Ele não quer aprender a tolerar pequenas doses do ecossistema antigo.
+
+Quer construir uma vida cuja rotina, informação, relações e identidade não precisem mais tocar nele.
+
+## 12. O `cartaz esquecido` continua válido
+
+Jhonny não precisa ser apagado da memória de quem ficou.
+
+As pessoas podem lembrar dele como alguém do passado:
+
+```text
+"caralho, nunca mais vi aquele moleque."
+"nem eu."
+```
+
+E o assunto morre ali.
+
+O ideal não é amnésia coletiva.
+
+É **memória sem vínculo ativo**.
+
+Quem ficou lembra do que ele foi.
+
+Não acompanha o que ele virou.
+
+Jhonny também pode lembrar do que eles foram.
+
+Não acompanha mais o que se tornaram.
+
+## 13. Fórmula canônica
+
+```text
+Jhonny
+= afeto real pelos amigos
++ reconhecimento de que eles não são necessariamente culpados
++ percepção de que continuam integrados ao ecossistema
++ percepção de que contato transporta informação e relações desse ecossistema
++ conclusão de que qualquer ponte mantém o sistema vivo em sua vida
++ aceitação do custo emocional
++ corte total dos vínculos
++ vida nova sem atualização constante da antiga
+```
+
+A leitura correta não é:
+
+```text
+não gosto mais deles.
 ```
 
 É:
 
 ```text
-manter todas as cordas com a vida antiga
-vs
-aceitar perder parte delas para construir paz real em outro lugar
+eu gosto deles.
+mas para realmente sair,
+preciso sair também da relação que ainda me conecta ao sistema através deles.
 ```
 
-Jhonny escolhe a segunda.
+## 14. Princípio final
 
-Essa é uma das formas centrais de seu egoísmo defensivo.
+Jhonny não está tentando se afastar apenas de um lugar.
 
-Ele não deseja o prejuízo dos amigos. Ele apenas deixa de considerar a preservação de todos os vínculos uma obrigação maior do que a própria paz.
+Ele está tentando encerrar **uma rede inteira de pertencimento e informação**.
 
-## 5. Ele não exige que os amigos escolham o lado dele
+Por isso mudar de cenário sem cortar as relações seria insuficiente.
 
-Jhonny não precisa transformar a saída num ultimato.
+A paz exige que o ecossistema deixe de possuir rotas de entrada na vida nova.
 
-Ele não pensa necessariamente:
+A consequência mais dura é também a mais clara:
 
-```text
-venham comigo ou estão contra mim.
-```
-
-Pelo contrário, a maturação de Jhonny inclui aceitar que os amigos podem continuar naquele mundo porque, para eles, ele funciona de maneira diferente.
-
-A lógica é:
-
-```text
-vocês não precisam sair porque eu saio.
-eu não preciso ficar porque vocês ficam.
-```
-
-Essa independência é central.
-
-## 6. Paz não é vitória social
-
-A paz de Jhonny não depende de ser reconhecido como certo depois.
-
-Ele não precisa que os amigos descubram que o sistema era ruim.
-
-Não precisa que sintam culpa.
-
-Não precisa que procurem por ele.
-
-Não precisa que contem sua história como mártir.
-
-O objetivo é bem mais simples:
-
-```text
-a vida nova precisa funcionar mesmo que a vida antiga continue sem ele.
-```
-
-## 7. O paradoxo emocional
-
-Jhonny pode sentir afeto e ainda assim cortar a corda.
-
-Pode sentir falta e ainda assim não voltar.
-
-Pode lembrar com carinho e ainda concluir que a proximidade permanente custaria caro demais.
-
-Pode desejar que os amigos fiquem bem sem desejar continuar pertencendo ao mesmo sistema.
-
-Isso não é contradição de escrita.
-
-É precisamente o conflito:
-
-```text
-eu gosto de vocês.
-mas não tenho mais lugar aqui.
-```
-
-## 8. Relação com Midrato
-
-Midrato ainda tende a pensar que amizade, afeto e esforço justificam continuar tentando viver dentro do ecossistema.
-
-Ele aceita mais custo para preservar vínculo e melhorar o ambiente compartilhado.
-
-Jhonny aparece quando o cálculo muda:
-
-```text
-Midrato:
-ainda vale pagar parte de mim para continuar aqui com vocês.
-
-Jhonny:
-eu gosto de vocês, mas não vou mais pagar com a minha paz para continuar aqui.
-```
-
-Essa passagem é uma das formas mais claras da transformação `Midrato -> Jhonny`.
-
-## 9. Frase de controle
-
-A leitura correta é:
-
-```text
-Jhonny não abandona os amigos porque deixou de gostar deles.
-
-Ele aceita perder proximidade com pessoas de quem gosta
-porque concluiu que permanecer ligado ao ecossistema inteiro
-custaria a paz que decidiu finalmente priorizar.
-```
-
-A paz exige sacrifício porque a vida antiga possui coisas valiosas.
-
-Jhonny apenas conclui que **valor não é o mesmo que obrigação de permanência**.
+**Jhonny abandona 100% o contato com os amigos que permanecem ligados ao ecossistema antigo, não porque deixou de amá-los, mas porque concluiu que até o vínculo mais afetuoso ainda mantém aberta uma porta para aquilo de que decidiu finalmente sair.**
